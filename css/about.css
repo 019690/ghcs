@@ -774,12 +774,12 @@ header ul li:hover .sub-menu {
  text-align: center;
 } 
 
-.healing-2-content ol{
+.healing-2-content ol li{
  text-align: center;
  width: 100%;
  padding-top: 20px;
  line-height: 2em;
- list-style-type: numeric;
+ list-style: blue circle;
 }
 
 .work{
