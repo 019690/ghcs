@@ -342,7 +342,8 @@ header .menu {
 
 .title-background{
   width: 60%;
-  margin: 10px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .title-background h2{
@@ -355,14 +356,23 @@ header .menu {
 
 .title-background h3{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--heading-color);
 }
 
 .title-background p{
   text-align: center;
-  font-size: large;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   color: var(--body-color);
+}
+
+.title-background ol{
+  list-style: square;
+  line-height: 2rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .title-background .t-btn {
@@ -373,7 +383,7 @@ header .menu {
  font-size: 1rem;
  text-transform: uppercase;
  font-weight: 700;
- margin-left: 200px;
+ /* margin-left: 200px; */
  text-align: center;
  width: 40%;
  margin-top: 30px;
@@ -405,7 +415,7 @@ header .menu {
 }
 
 .title-background .t-btn {
- margin-left: 60px;
+ /* margin-left: 60px; */
  width: 60%;
  margin-top: 0px;
  padding: 2px;
@@ -415,7 +425,7 @@ header .menu {
 
 @media (max-width: 426px) {
   .page-title{
- height: 80vh;
+ height: auto;
 }
 
 .title-background h2{
@@ -431,7 +441,7 @@ header .menu {
 }
 
 .title-background .t-btn {
- margin-left: 20px;
+ /* margin-left: 20px; */
  width: 80%;
  margin-top: 0px;
  padding: 2px;
@@ -1003,23 +1013,24 @@ height: 50vh;
 /* ===== END OF PROGRAMMES PAGE ===== */
 /* ===== END OF PG-1 ===== */
 .pg-1-sect{
-  height: 110vh;
+  height: 100vh;
   background: url(../assets/prog-intr0.JPG);
   background-size: cover;
 }
 
 .pg-1-cont{
   text-align: center;
-  width: 70%;
+  width: 60%;
   justify-content: center;
   padding: 3rem;
+  padding-top: 8rem;
   height: 70%;
 }
 
 .pg-1-cont h1{
   text-transform: uppercase;
   color: var(--add-color);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 800;
   padding-bottom: 3rem;
 }
@@ -1120,6 +1131,7 @@ height: 50vh;
   padding: 20px;
   background-color: var(--heading-color);
   border-radius: 0.4rem;
+  text-align: center;
 }
 
 .myl-cont h1{
@@ -1131,6 +1143,14 @@ height: 50vh;
   text-align: center;
   line-height: 1.2rem;
   color: var(--body-color);
+}
+
+.myl-cont button{
+  padding: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.4rem;
 }
 
 .pg-1-myl img{
