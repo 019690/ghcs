@@ -344,26 +344,27 @@ header .menu {
   width: 60%;
   margin-top: 40px;
   text-align: center;
+  padding-left: 20px;
 }
 
-.title-background h2{
+/* .title-background h2{
  text-align: center;
- /* text-transform: uppercase; */
- font-size: 2rem;
+ text-transform: uppercase;
+ font-size: 1.8rem;
  color: var(--add-color);
  font-family: 'times new roman', cursive;
-}
+} */
 
 .title-background h3{
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--heading-color);
 }
 
 .title-background p{
   text-align: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
+  /* text-transform: uppercase; */
+  font-size: 1rem;
   color: var(--body-color);
 }
 
@@ -455,7 +456,7 @@ header .menu {
 
 /* ===== YOUR STORY ===== */
 .your-story{
- height: 100vh;
+ height: auto;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -480,15 +481,17 @@ header .menu {
 }
 
 .ys-content{
- text-align: center;
+ text-align: left;
  align-items: center;
  justify-content: center;
  width: 60%;
 }
 
 .ys-content p{
- margin-top: 20px;
- text-align: center;
+ margin-top: 10px;
+ text-align: left;
+ padding: 10px;
+ /* line-height: 1.5rem; */
 }
 
 @media (max-width: 769px) {
@@ -1212,7 +1215,7 @@ height: 50vh;
 background-color: whitesmoke;
 text-align: center;
 text-transform: uppercase;
-height: 120vh;
+height: 130vh;
 display: flex;
 flex-direction: column;
 align-items: center;

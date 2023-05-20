@@ -552,8 +552,8 @@ header ul li:hover .sub-menu {
 } 
 
 .healing-content ol{
- text-align: center;
- padding-top: 20px;
+ text-align: left;
+ padding-top: 5px;
  line-height: 2em;
  list-style-type: numeric;
 }
@@ -563,7 +563,7 @@ header ul li:hover .sub-menu {
  width: 100%;
  height: 80vh;
  margin-top: 20px;
- margin-bottom: 20px;
+ margin-bottom: 0px;
  justify-content: space-between;
 }
 
