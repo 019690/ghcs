@@ -666,6 +666,47 @@ height: 50vh;
 }
 }
 
+.popup{
+  width: 400px;
+  background: var(--add-color);
+  opacity: 0.9;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: var(--heading-color);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 400%;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-position: var(--p-color);
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
 /* ===== END OF blog ===== */
@@ -1408,6 +1449,7 @@ font-size: 1.3em;
   padding: 10px;
   text-transform: uppercase;
   font-size: 1.5rem;
+  cursor: pointer;
   font-weight: 700;
 }
 

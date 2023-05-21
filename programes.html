@@ -92,7 +92,12 @@
         additional individual sessions or take up the 6-week Clarity and Growth program, which allows for an intensive
         approach.
       </p>
-      <button>individual session</button>
+      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
+      <div class="popup" id="popup">
+        <h2>pay for your product</h2>
+        <p>lorem10</p>
+        <button type="submit" onclick="closePopup()">submit </button>
+      </div>
     </div>
   </div>
 
@@ -110,7 +115,12 @@
         and create
         positive momentum toward your goals.
       </p>
-      <button><a href="./private-coaching.html">private coaching</a></button>
+      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
+      <div class="popup" id="popup">
+        <h2>pay for your product</h2>
+        <p>lorem10</p>
+        <button type="submit" onclick="closePopup()">submit </button>
+      </div>
     </div>
     <div class="PC-img">
       <!-- <h1>private coaching</h1> -->
@@ -133,7 +143,12 @@
         program. At
         the end of the four weeks, you will have the ability to navigate the relationship positively.
       </p>
-      <button><a href="./individual-sessions.html">individual session</a></button>
+      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
+      <div class="popup" id="popup">
+        <h2>pay for your product</h2>
+        <p>lorem10</p>
+        <button type="submit" onclick="closePopup()">submit </button>
+      </div>
     </div>
   </div>
 
@@ -151,7 +166,12 @@
         transformation process. The program combines online and one-on-one sessions for output and results optimization.
 
       </p>
-      <button><a href="./private-coaching.html">private coaching</a></button>
+      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
+      <div class="popup" id="popup">
+        <h2>pay for your product</h2>
+        <p>lorem10</p>
+        <button type="submit" onclick="closePopup()">submit </button>
+      </div>
     </div>
     <div class="PC-img">
       <!-- <h1>private coaching</h1> -->
@@ -195,7 +215,7 @@
               <a href="tel:+254724489637"><i class="fa-solid fa-phone" style="color: salmon;"></i>
                 +254724489637</a>
             </li>
-            <li><a href="mailto:eve.biz@gmail.com?subject = Feedback&body = Message"><i
+            <li><a href="mailto:info@growhubcoachingservices.co.ke?subject = Feedback&body = Message"><i
                   class="fa-solid fa-envelope"></i>
                 info@growhubcoachingservices.co.ke
               </a></li>
@@ -239,6 +259,24 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtn.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+
+  let popup = document.getElementById("popup");
+
+  function openPopup() {
+    popup.classList.add("open-popup")
+  }
+  function closePopup() {
+    popup.classList.remove("open-popup")
+  }
 </script>
 
 </html>

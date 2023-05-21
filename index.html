@@ -194,7 +194,12 @@
           additional individual sessions or take up the 6-week Clarity and Growth program, which allows for an intensive
           approach.
         </p>
-        <button><a href="./individual-sessions.html">begin the journey</a></button>
+        <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
+        <div class="popup" id="popup">
+          <h2>pay for your product</h2>
+          <p>lorem10</p>
+          <button type="submit" onclick="closePopup()">submit </button>
+        </div>
       </div>
 
   </main>
@@ -232,7 +237,7 @@
                 +254724489637</a>
             </li>
             <!-- <li> <a href="#"> <i class="fa-solid fa-envelope"></i> eve.biz@gmail.com</li> </a> -->
-            <li><a href="mailto:eve.biz@gmail.com?subject = Feedback&body = Message"><i
+            <li><a href="mailto:info@growhubcoachingservices.co.ke?subject = Feedback&body = Message"><i
                   class="fa-solid fa-envelope"></i>
                 info@growhubcoachingservices.co.ke
               </a></li>
@@ -290,6 +295,16 @@
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars'
     }
+
+    let popup = document.getElementById("popup");
+
+    function openPopup() {
+      popup.classList.add("open-popup")
+    }
+    function closePopup() {
+      popup.classList.remove("open-popup")
+    }
+
   </script>
 
 </body>
