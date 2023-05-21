@@ -440,14 +440,16 @@ header .menu {
 .title-background p{
   font-size: 0.8rem;
   padding-top: 0px;
+  p
 }
 
 .title-background ol {
+  /* margin-top: 0px; */
   /* list-style: square; */
-  line-height: 1rem;
+  line-height: 0.9rem;
   /* text-transform: capitalize; */
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .title-background .t-btn {
