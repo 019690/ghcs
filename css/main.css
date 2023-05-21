@@ -1053,6 +1053,14 @@ height: 50vh;
   padding-bottom: 3rem;
 }
 
+.pg-1-cont a{
+  padding: 10px;
+}
+
+.pg-1-cont a:hover{
+  padding: 20px;
+}
+
 .pg-1-cont p{
   color: var(--body-color);
   /* text-transform: uppercase; */

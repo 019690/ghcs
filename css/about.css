@@ -470,7 +470,7 @@ header ul li:hover .sub-menu {
 
 .your-coach-content p {
   text-align: center;
-  padding-left: 0px;
+  /* padding-left: 0px; */
   padding: 10px;
 }
 }
