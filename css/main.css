@@ -81,7 +81,7 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 0rem; */
   color: var(--p-color);
 }
 
@@ -506,6 +506,7 @@ header .menu {
  margin-top: 0px;
  text-align: left;
  padding: 10px;
+ margin-bottom: 0px;
  /* line-height: 1.5rem; */
 }
 

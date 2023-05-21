@@ -554,11 +554,11 @@ header ul li:hover .sub-menu {
 } 
 
 .healing-content ol{
- text-align: center;
+ text-align: left;
  padding-top: 0px;
  line-height: 2em;
  color: var(--add-color);
- /* list-style-type: numeric; */
+ /* list-style:; */
 }
 
 .healing-2{
@@ -582,13 +582,15 @@ header ul li:hover .sub-menu {
 
 .healing-2-content h2{
  text-align: center;
+ color: var(--add-color);
+ text-transform: uppercase;
 } 
 
 .healing-2-content ol{
- text-align: center;
+ text-align: left;
  padding-top: 20px;
  line-height: 2em;
- list-style-type: numeric;
+ list-style: numeric;
 }
 
 @media (max-width: 769px) {
@@ -808,6 +810,7 @@ header ul li:hover .sub-menu {
   width: 80%;
   margin: 50px auto; 
   clear: both;
+  /* background-color: var(--heading-color); */
   /* margin-bottom: 20PX; */
 }
 
@@ -886,17 +889,20 @@ position: relative;
   flex-direction: column;
   box-shadow: 2px;
   border-radius: 1rem;
+  background-color: var(--heading-color);
 }
 
 .coaching-payment h2 {
   font-size: 1rem;
   text-transform: uppercase;
+  color: var(--body-color);
 }
 
 .coaching-payment p{
   text-transform: uppercase;
   line-height: 1.5rem;
   text-align: center;
+  color: var(--body-color);
 }
 
 .coaching-payment form input {
