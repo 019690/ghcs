@@ -440,7 +440,7 @@ header .menu {
 .title-background p{
   font-size: 0.8rem;
   padding-top: 0px;
-  p
+  
 }
 
 .title-background ol {
@@ -459,7 +459,6 @@ header .menu {
  padding: 2px;
  font-size: 0.6rem;
 }
-
 }
 
 
@@ -1393,7 +1392,7 @@ align-items: center;
 
 .IS-cont{
   width: 60%;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
   background-color: var(--heading-color);
   margin: 20px;
@@ -1403,18 +1402,19 @@ align-items: center;
 .IS-cont h2{
 text-transform: uppercase;
 color: coral;
-padding-bottom: 20px;
+padding-bottom: 0px;
+font-size: 2rem;
 }
 
 .IS-cont h6{
 text-transform: uppercase;
 color: coral;
-padding-bottom: 20px;
+padding-bottom: 0px;
 font-size: 2em;
 }
 
 .IS-cont p{
-padding-bottom: 20px;
+padding-bottom: 10px;
 font-size: 1.3em;
 }
 
