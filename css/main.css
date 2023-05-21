@@ -177,73 +177,51 @@ header ul li a:hover {
  border-bottom: 2px solid var(--add-color);
 }
 
-header .menu {
- font-size: 2.5rem;
- display: none;
-}
-
-.sub-menu {
- position: absolute;
- background: var(--heading-color);
- top: 74px;
- line-height: 40px;
- border-radius: 0 0 8px 8px;
- box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
- pointer-events: none;
- transform: translateY(20px);
- opacity: 0;
- transition: 0.3s;
- transition-property: transform, opacity;
-}
-
-header ul li:hover 
-.sub-menu {
- pointer-events: all;
- transform: translateY(0);
- opacity: 1;
- z-index: 0.8;
-}
-
-.sub-menu .sub-item {
- position: relative;
- padding: 7px 0;
- cursor: pointer;
- box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
-}
-
-.sub-menu .sub-item a {
- color: #fff;
- font-size: 1rem;
- padding: 15px 30px;
-}
-
-.sub-menu .sub-item:hover {
- background: var(--heading-color);
-}
-
-.sub-menu .sub-item:last-child:hover {
- border-radius: 0 0 8px 8px;
-}
-
-#chk1 {
-  display: none;
-}
-
-.check-btn{
-  font-size: 30px;
-  color: var(--link-color);
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
+header .toggle-btn{
+  color: var(--heading-color);
+  font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
 
- @media (max-width: 769px) {
-  .check-btn{
-    display: block;
-  }
+.dropdown-menu{
+  position: absolute;
+  right: 0rem;
+  display: none;
+  top: 60px;
+  height: 0;
+  width: 200px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* text-decoration-color: black; */
+  text-align: center;
+  text-transform: uppercase;
+  background: var(--heading-color);
+  opacity: 0.6;
+  /* backdrop-filter: blur(15px); */
+  border-radius: 5px;overflow: hidden;
+  /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
 
+.dropdown-menu.open{
+  height: 240px;
+}
+
+.dropdown-menu li a{
+  padding: 0.7rem;
+  /* display: flex; */
+  color: var(--body-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu li a:hover{
+  color: var(--add-color);
+}
+
+
+
+ @media (max-width: 769px) {
   header ul{
     position: absolute;
     width: 50%;
@@ -256,14 +234,6 @@ header ul li:hover
     flex-direction: column;
   }
 
-  header .menu{
-    display: block;
-    width: 100px;
-    text-align: center;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
   header ul li a{
     font-size: 20px;
   } 
@@ -273,8 +243,13 @@ header ul li:hover
     color: var(--add-color);
   }
 
-  #chk1:checked ~ ul{
-    right: 0;
+  header .toggle-btn{
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+    width: unset;
   }
 }
 
@@ -325,8 +300,9 @@ header .menu {
  padding: 15px;
 }
 
-#chk1:checked ~ ul{
-  left: 0;
+.dropdown-menu{
+  left: 2rem;
+  width: unset;
 }
 } 
 

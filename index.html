@@ -25,7 +25,6 @@
 <body>
   <!--== nav-bar ==-->
   <header>
-    <input type="checkbox" name="" id="chk1">
     <div class="logo">
       <a href="./index.html">
         <h1>Grow hub coaching consultant</h1>
@@ -50,10 +49,26 @@
         </li>
       </ul>
     </div>
-    <div class="menu">
-      <label for="chk1">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+    <div class="toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="dropdown-menu">
+
+      <li><a href="./programes.html">Programs</a></li>
+      <li><a href="./shop.html">Shop</a>
+      </li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.instagram.com/growhubcoachingservices/?igshid=OTk0YzhjMDVlZA%3D%3D"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/growhubcoachingservices?mibextid=ZbWKwL"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/evlyne-muchiri"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+
     </div>
   </header>
   <!--== end of nav-bar ==-->
@@ -65,10 +80,6 @@
       <div class="title-background">
         <h3>Welcome to Grow Hub Coaching Services by Eve</h3>
         <br>
-        <p>In a snapshot, you will access coaching services in the below areas. However, all sessions are individualized
-          to allow
-          us to explore, clarify, and define your specific need, the desired destination, and the process that gets you
-          there.</p>
         <li>
           <ol>relationship coaching</ol>
           <ol>Goal clarity & achievement</ol>
@@ -88,82 +99,26 @@
       <div class="ys-content">
         <h1>Your story starts here</h1>
         <!-- <img src="./assets/your story.jpg" alt="" height="500"> -->
-        <p>Quality relationships, abundance, career growth, getting ahead in life, financial stability and wealth
-          creation,
-          entrepreneurship, leadership at work, good health, and all other things you desire, depending on how well you
-          know
-          yourself. This is the reason why all coaching programs have their foundation first on self-awareness and then
-          on growth.
+        <p>You will be surprised at how much other people influence how you see yourself, how you evaluate your
+          abilities, what you
+          value and believe in, and the choices you make. When you live your life unconscious of this influence, you
+          think you are
+          making independent and authentic decisions when you actually are not.
           <br>
           <br>
-          Negative situations keep recurring until we gain self-awareness to help us make helpful decisions.
-          Self-awareness does
-          not mean that you will not have challenging situations or failures. It means you will fail forward into growth
-          and
-          unlock new potential, growing, succeeding because you will firmly ground your approach to every situation on
-          who you
-          truly are. You will be surprised at how much other people influence how you see yourself, how you evaluate
-          your
-          abilities, what you value and believe in, and the choices you make. When you live your life unconscious of
-          this
-          influence, you think you are making independent and authentic decisions when you actually are not.
-          <br>
-          <br>
-          Similarly, positive results will show up more when you are self-aware. Your well-being matters. You can be the
-          hero in
-          your journey. You can make a great impact through your life experiences. Embrace your journey and live life on
-          your
-          terms.
-          <br>
-          <br>
-          Transformation life coaching is essential for you because you want to be happy and prosperous, you have great
-          dreams and
-          goals, you are craving for change, you are not yet where you know you would love to be, and the journey ahead
-          leaves you
-          worried, unsure, and even afraid. Perhaps you feel doubtful of your abilities which makes you second-guess
-          yourself. You
-          may like to speak up more, but this is hard for you; maybe you only speak when prompted or hardly speak when
-          it matters
-          the most. You may struggle to say no, or your relationships could use some new direction. The good thing is
-          there are
-          others with similar issues. The even more remarkable thing is you can overcome each challenge positively.
+          You are here for the right reason and at the right time. Transformative life coaching is essential for you
+          because you
+          want to be happy and prosperous, you have great dreams and goals, you are craving for change, you are not yet
+          where you
+          know you would love to be, and the journey ahead leaves you worried, unsure, and even afraid. You want better.
+          But then you ask,
+          What if I fail? What if I embarrass myself? What if people I value disapprove of my decision? What if I cannot
+          manage on
+          my own? What if I am wrong?
+          It is time to get past the "what ifs."
+          Book your coaching session or program today, move toward what sets your heart on fire, and transform your
+          life.
 
-        </p>
-        <p>
-          <li>
-            <h2>But then you ask,</h2>
-
-            What if I fail?
-            <br>
-            What if I embarrass myself?
-            <br>
-            What if people I value disapprove of my decision?
-            <br>
-            What if I cannot manage on my own?
-            <br>
-            What if I am wrong?
-            <br>
-            <h2>It is time to get past the "what ifs."</h2>
-
-          </li>
-        </p>
-        <p>
-          Overcoming fear, procrastination, self-doubt, limiting beliefs, lack of inspiration, and eventually getting
-          unstuck
-          requires action.
-          You might have taken action, but the step needed to be bolder to create movement in the right direction. You
-          might have
-          taken action but with a mindset and habits that keep you more in the past than you realize. You might even
-          have made the
-          wrong move.
-          However, if you dig deeper into your actions, thoughts, decisions, and patterns, you will uncover the barriers
-          and can
-          begin your healing and transformation journey.
-          Transformation means questioning everything you know and believe. It is uncomfortable, challenging, and
-          rewarding. It is
-          the way to build self-confidence, resilience, self-love, positive habits, and self-discipline through the
-          coaching programs and products
-        </p>
       </div>
     </section>
 
@@ -321,6 +276,20 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
   </script>
 
 </body>
