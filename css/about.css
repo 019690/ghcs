@@ -345,7 +345,7 @@ header ul li:hover .sub-menu {
 /* == ABOUT TITLE == */
 .blog-sec{
  width: 100%;
- height: 120vh;
+ height: 100vh;
  /* margin-top: 2rem; */
  background: url(../assets/prog-intr0.JPG);
  background-size: cover;
@@ -355,16 +355,17 @@ header ul li:hover .sub-menu {
 .bg-container{
  text-align: center;
  margin-left: 1rem;
- margin-top: 5rem;
+ margin-top: 12rem;
  width: 60%;
 }
 
 .bg-container h2{
- margin-bottom: 3rem;
+ /* margin-top: 3rem; */
  text-transform: uppercase;
  font-size: 1.9rem;
  font-style: italic;
  font-weight: 600;
+ color: var(--body-color);
 }
 
 @media (max-width: 769px) {
@@ -520,12 +521,13 @@ header ul li:hover .sub-menu {
  padding: 10rem;
 }
 
-.heal-content h2{
+.healing-content h2{
   text-align: center;
+  padding-bottom: 10px;
  font-weight: 900;
- font-size: 6rem;
+ font-size: 1rem;
  text-transform: uppercase;
- color: var(--heading-color);
+ color: hsl(209, 61%, 16%);
 }
 
 .healing{
@@ -552,10 +554,11 @@ header ul li:hover .sub-menu {
 } 
 
 .healing-content ol{
- text-align: left;
- padding-top: 5px;
+ text-align: center;
+ padding-top: 0px;
  line-height: 2em;
- list-style-type: numeric;
+ color: var(--add-color);
+ /* list-style-type: numeric; */
 }
 
 .healing-2{
@@ -778,7 +781,7 @@ header ul li:hover .sub-menu {
 .EB-1{
   height: 100vh;
   width: 100%;
-  background: url(../assets/friendships.jpg);
+  background: url(../assets/shop.jpg);
   background-size: cover;
   text-align: center;
 }
@@ -789,20 +792,23 @@ header ul li:hover .sub-menu {
 }
 
 .EB-cont h1{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
-  color: var(--add-color);
+  color: var(--heading-color);
 }
 
 .EB-cont p{
   padding: 50px;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
 }
 
 .contaner{
   width: 80%;
   margin: 50px auto; 
   clear: both;
+  /* margin-bottom: 20PX; */
 }
 
 .contaner::before .contaner::after{
@@ -817,18 +823,6 @@ display: inline-block;
 vertical-align: top;
 float: right;
 position: relative;
-/* height: 500px; */
-
-  /* align-items: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: auto;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  background: linear-gradient(-45deg, var(--p-color), var(--add-color)); */
 }
 
 .EB-2 div{
@@ -862,8 +856,16 @@ position: relative;
 
 .EB-2 h1{
   color: var(--heading-color);
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   text-align: center;
+  padding: 20px;
+}
+
+.EB-2 p{
+  color: var(--heading-color);
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
 }
 
 .EB-2-cont button {
@@ -871,46 +873,19 @@ position: relative;
   padding: 10px;
   font-size: 1.5rem;
   font-weight: 600;
-  color: aquamarine;
+  color: var(--add-color);
   background-color: var(--heading-color);
   text-transform: uppercase;
 }
-
-/* .EB-cont-img img{
-  height: 50vh;
-  float: left;
-  display: flex;
-  padding: 20px;
-  border-radius: 1.9rem;
-  width: 20vw;
-}
-
-.EB-2-cont{
-  width: 60%;
-  margin: 20px;
-}
-
-.EB-2-cont h1{
-  padding: 20px;
-}
-
-.EB-2-cont p{
-  padding: 20px;
-}
-
-*/
 
 .coaching-payment {
   width: 300px;
   padding: 10px;
   align-items: center;
-  /* float: right; */
-  /* background-color: whitesmoke;s */
   display: flex;
   flex-direction: column;
   box-shadow: 2px;
   border-radius: 1rem;
-  /* margin: 40px; */
 }
 
 .coaching-payment h2 {

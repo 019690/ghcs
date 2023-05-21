@@ -974,7 +974,7 @@ height: 50vh;
 /* ===== CONTACT PAGE ===== */
 
 .contact{
- background-color: rgba(0, 117, 128, 0.481);
+ background-color: var(--heading-color);
  align-items: center;
  display: flex;
  flex-direction: column;
