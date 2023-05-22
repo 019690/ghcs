@@ -21,10 +21,6 @@
 
 <body>
   <header>
-    <input type="checkbox" name="" id="chk1">
-    <!-- <label for="chk1" class="check-btn">
-        <i class="fas fa-bars"></i>
-      </label> -->
     <div class="logo">
       <a href="./index.html">
         <h1>Grow hub coaching consultant</h1>
@@ -35,7 +31,8 @@
     <div class="menu-1">
       <ul>
         <li><a href="./programes.html">Programs</a></li>
-        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./shop.html">Shop</a>
+        </li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
@@ -48,13 +45,28 @@
         </li>
       </ul>
     </div>
-    <div class="menu">
-      <label for="chk1" class="check-btn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+    <div class="toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="dropdown-menu">
+
+      <li><a href="./programes.html">Programs</a></li>
+      <li><a href="./shop.html">Shop</a>
+      </li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.instagram.com/growhubcoachingservices/?igshid=OTk0YzhjMDVlZA%3D%3D"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/growhubcoachingservices?mibextid=ZbWKwL"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/evlyne-muchiri"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+
     </div>
   </header>
-
   <div class="EB-1">
     <div class="EB-cont">
       <h1> PRODUCTS THAT ENHANCE YOUR LEARNING PROCESS</h1>
@@ -137,6 +149,21 @@
 
     </div>
   </div>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
 </body>
 
 

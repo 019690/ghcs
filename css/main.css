@@ -86,7 +86,7 @@ header {
  justify-content: space-between;
  align-items: center;
  position: relative;
- z-index: 99;
+ /* z-index: 99; */
  box-shadow: 0 0 10px #0000;
  background: var(--body-color);
 }
@@ -122,11 +122,11 @@ header .logo h2 {
 }
 
 .menu-1{
-  float: right;
+  /* float: right; */
 }
 
 header ul {
-  flex: 2;
+  /* flex: 2; */
   display: flex;
   justify-content: space-between 10px;
 }
@@ -288,7 +288,7 @@ header .menu {
  display: flex;
  background: url(../assets/HPimg.JPG);
  background-size: cover;
- height: 100vh;
+ height: auto;
 }
 
 .title-background{
@@ -322,7 +322,7 @@ header .menu {
  border: solid var(--add-color);
  border-radius: 0.6rem;
  padding: 1rem 1rem;
- margin-bottom: 0px;
+ margin-bottom: 20px;
  font-size: 1rem;
  text-transform: uppercase;
  font-weight: 700;
@@ -741,6 +741,10 @@ height: 50vh;
 }
 
 @media (max-width: 769px) {
+
+  .footer{
+    height: auto;
+  }
  .footer .f-row{
   flex-direction: column;
   padding: 20px 30px;
@@ -775,7 +779,7 @@ height: 50vh;
  align-items: center;
  display: flex;
  flex-direction: column;
- height: 100vh;
+ height: auto;
  border-radius: 0.4rem;
  margin-top: 40px;
  margin-bottom: 40px;
@@ -879,7 +883,7 @@ height: 50vh;
 /* ===== END OF PROGRAMMES PAGE ===== */
 /* ===== END OF PG-1 ===== */
 .pg-1-sect{
-  height: 100vh;
+  height: auto;
   background: url(../assets/prog-intr0.JPG);
   background-size: cover;
 }
@@ -932,7 +936,7 @@ height: 50vh;
 
 @media (max-width: 769px) {
   .pg-1-sect{
-  height: 100vh;
+  height: auto;
 }
 
 .pg-1-cont{
@@ -964,7 +968,7 @@ height: 50vh;
 
 @media (max-width: 426px) {
 .pg-1-sect{
-  height: 80vh;
+  height: auto;
 }
 
 .pg-1-cont{
@@ -1086,7 +1090,7 @@ height: 50vh;
 background-color: whitesmoke;
 text-align: center;
 text-transform: uppercase;
-height: 130vh;
+height: auto;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -1232,7 +1236,7 @@ align-items: center;
 /* ===== IS ===== */
 
 .pg-1-IS{
-  height: 90vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   width: 100%;
