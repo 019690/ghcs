@@ -341,7 +341,7 @@ header .menu {
 
 @media (max-width: 769px) {
   .page-title{
- height: 70vh;
+ height: auto;
 }
 
 .title-background{
@@ -364,6 +364,7 @@ header .menu {
  /* margin-left: 60px; */
  width: 60%;
  margin-top: 0px;
+ margin-bottom: 20px;
  padding: 2px;
  font-size: 0.6rem;
 }
@@ -371,7 +372,7 @@ header .menu {
 
 @media (max-width: 426px) {
   .page-title{
- height: 65vh;
+ height: auto;
 }
 
 .title-background {
@@ -397,6 +398,7 @@ header .menu {
 .title-background .t-btn {
  width: 100%;
  margin-top: 10px;
+ margin-bottom: 20px;
  padding: 2px;
  font-size: 0.6rem;
 }
