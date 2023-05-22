@@ -24,7 +24,6 @@
 <body>
   <!--== nav-bar ==-->
   <header>
-    <input type="checkbox" name="" id="chk1">
     <div class="logo">
       <a href="./index.html">
         <h1>Grow hub coaching consultant</h1>
@@ -36,8 +35,6 @@
       <ul>
         <li><a href="./programes.html">Programs</a></li>
         <li><a href="./shop.html">Shop</a>
-          <ul class="sub-menu">
-          </ul>
         </li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./about.html">About</a></li>
@@ -51,10 +48,26 @@
         </li>
       </ul>
     </div>
-    <div class="menu">
-      <label for="chk1">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+    <div class="toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="dropdown-menu">
+
+      <li><a href="./programes.html">Programs</a></li>
+      <li><a href="./shop.html">Shop</a>
+      </li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.instagram.com/growhubcoachingservices/?igshid=OTk0YzhjMDVlZA%3D%3D"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/growhubcoachingservices?mibextid=ZbWKwL"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/evlyne-muchiri"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+
     </div>
   </header>
   <!--== end of nav-bar ==-->
@@ -67,6 +80,8 @@
       <p>Do you need clarification on what program suits you best or additional details about transformative life
         coaching and
         the coaching process? Click below and send mail, call, or send a WhatsApp message. Happy to help.</p>
+      <br>
+      <br>
       <a href="https://wa.me/+254724489637" target="_blank"><i class="fa-brands fa-square-whatsapp  fa-2xl"
           style="color: #30e84f;"></i></a>
       <a href="mailto:eve.biz@gmail.com?subject = Feedback&body = Message"><i class="fa-solid fa-envelope fa-2xl"
@@ -92,12 +107,7 @@
         additional individual sessions or take up the 6-week Clarity and Growth program, which allows for an intensive
         approach.
       </p>
-      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
-      <div class="popup" id="popup">
-        <h2>pay for your product</h2>
-        <p>lorem10</p>
-        <button type="submit" onclick="closePopup()">submit </button>
-      </div>
+      <button> <a href="./coaching-bundle.html" target="_blank"> buy product </a></button>
     </div>
   </div>
 
@@ -115,12 +125,7 @@
         and create
         positive momentum toward your goals.
       </p>
-      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
-      <div class="popup" id="popup">
-        <h2>pay for your product</h2>
-        <p>lorem10</p>
-        <button type="submit" onclick="closePopup()">submit </button>
-      </div>
+      <button> <a href="./coaching-bundle.html" target="_blank"> buy product </a></button>
     </div>
     <div class="PC-img">
       <!-- <h1>private coaching</h1> -->
@@ -143,12 +148,7 @@
         program. At
         the end of the four weeks, you will have the ability to navigate the relationship positively.
       </p>
-      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
-      <div class="popup" id="popup">
-        <h2>pay for your product</h2>
-        <p>lorem10</p>
-        <button type="submit" onclick="closePopup()">submit </button>
-      </div>
+      <button> <a href="./coaching-bundle.html" target="_blank"> buy product </a></button>
     </div>
   </div>
 
@@ -164,14 +164,8 @@
         repetition,
         and a three months program provides sufficient time to help you navigate the issues that will arise during the
         transformation process. The program combines online and one-on-one sessions for output and results optimization.
-
       </p>
-      <button type="submit" class="p-btn" onclick="openPopup()">begin the journey</button>
-      <div class="popup" id="popup">
-        <h2>pay for your product</h2>
-        <p>lorem10</p>
-        <button type="submit" onclick="closePopup()">submit </button>
-      </div>
+      <button> <a href="./coaching-bundle.html" target="_blank"> buy product </a></button>
     </div>
     <div class="PC-img">
       <!-- <h1>private coaching</h1> -->
@@ -260,6 +254,10 @@
       .catch(error => console.error('Error!', error.message))
   })
 
+  const toggleBtn = document.querySelector('.toggle-btn')
+  const toggleBtnIcon = document.querySelector('.toggle-btn i')
+  const dropDownMenu = document.querySelector('.dropdown-menu')
+
   toggleBtn.onclick = function () {
     dropDownMenu.classList.toggle('open')
     const isOpen = dropDownMenu.classList.contains('open')
@@ -267,15 +265,6 @@
     toggleBtn.classList = isOpen
       ? 'fa-solid fa-xmark'
       : 'fa-solid fa-bars'
-  }
-
-  let popup = document.getElementById("popup");
-
-  function openPopup() {
-    popup.classList.add("open-popup")
-  }
-  function closePopup() {
-    popup.classList.remove("open-popup")
   }
 </script>
 

@@ -849,7 +849,7 @@ position: relative;
 .left{
   width: 300px;
   height: 100%;
-  background: var(--add-color-2);
+  background: var(--heading-color);
   display: inline-block;
   float: left;
   position: sticky;
