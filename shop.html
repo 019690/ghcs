@@ -77,93 +77,122 @@
       </p>
     </div>
   </div>
-  <div class="contaner">
-    <div class="left">
-      <div class="coaching-payment">
-        <h2>payment process</h2>
-        <p>1. go to m-pesa menu
-          <br>
-          2. click on lipa na m-pesa
-          <br>
-          3. click on pay bill
-          <br>
-          4. enter business number(522522)
-          <br>
-          5. enter account number(1315146789)
-          <br>
-          6. enter amount (specific to your product)
-          <br>
-          7. enter your m-pesa pin
-          <br>
-          8. wait for the confirmation m-pesa messsage
-          <br>
-          9. enter the transaction code below
-        </p>
-        <form>
-          <input type="text" name="text" id="" placeholder="enter yourfull name">
-          <input type="email" name="email" id="" placeholder="enter your email">
-          <input type="email" name="text" id="" placeholder="enter your product">
-          <input type="number" name="number" id="" placeholder="enter transaction code">
-        </form>
+  <div class="EB-2">
+    <h1>list of available products</h1>
 
-
-        <p>
-          <input type="checkbox" name="read" id="check" onclick="enable()"> I have read and agree to the
-          <a href="./termsandconditions.html"> terms and conditions</a> of this page as set forth by growhub coaching
-        </p>
-        <br>
-
-        <!-- <button class="complete" type="submit" disabled="true" id="checkbtn">complete my PURCHASE</button> -->
-        <form class="complete">
-          <input type="submit" disabled="true" id="checkbtn" value="COMPLETE MY PURCHASE">
-        </form>
+    <div class="wrapper">
+      <img src="./assets/SWW.png" alt="">
+      <div class="txt">
+        <h1>self-awareness (kes 500) </h1>
+        <p>Self-awereness is about recognizing and owning up to your strengths, weaknesses, and growth potential.
+          This
+          worksheet will help you be honest with yourself so you can create a solid foundation for personal growth
+          and
+          transformation</p>
       </div>
+      <button> <a href="./payment-portal.html">self-awareness worksheet</a></button>
     </div>
-    <div class="EB-2">
-      <div class="EB-2-cont">
-        <h1>list of available products</h1>
-      </div>
-      <div class="EB-cont-img">
-        <img src="./assets/SWW.png" alt="">
-      </div>
-      <div class="EB-2-cont">
-        <div class="EB-2-cont-inner">
-          <h1>self-awareness (kes 500) </h1>
-          <p>Self-awereness is about recognizing and owning up to your strengths, weaknesses, and growth potential. This
-            worksheet will help you be honest with yourself so you can create a solid foundation for personal growth and
-            transformation</p>
-          <button>self-awareness worksheet</button>
-        </div>
-      </div>
-      <div class="EB-cont-img">
-        <img src="./assets/HRW.png" alt="">
-      </div>
-      <div class="EB-2-cont">
-        <div class="EB-2-cont-inner">
-          <h1>relationship health-check (kes 500)</h1>
-          <p>This worksheet will help you have a detailed understanding of your past & present relationships, so you can
-            make decisions that lead to relationships that work.</p>
-          <button>healthy relationship worksheet</button>
-        </div>
-      </div>
 
+    <div class="wrapper">
+      <img src="./assets/HRW.png" alt="">
+      <div class="txt">
+        <h1>relationship health-check (kes 500)</h1>
+        <p>This worksheet will help you have a detailed understanding of your past & present relationships, so you can
+          make decisions that lead to relationships that work.</p>
+      </div>
+      <button> <a href="./payment-portal.html">healthy relationship worksheet</a></button>
     </div>
+
   </div>
 
-  <script>
-    const toggleBtn = document.querySelector('.toggle-btn')
-    const toggleBtnIcon = document.querySelector('.toggle-btn i')
-    const dropDownMenu = document.querySelector('.dropdown-menu')
+  <!--== FOOTER ==-->
+  <footer class="footer">
+    <div class="f-container">
+      <div class="f-row">
+        <div class="f-column">
+          <h2>company</h2>
+          <ul>
+            <li><a href="./programes.html">Programs</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="f-column">
+          <h2>NEWSLETTER</h2>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="text" id="" placeholder="name">
+            <input type="email" name="email" id="" placeholder="email" required>
+            <input type="submit" value="submit" class="input-submit">
+          </form>
+          <span id="msg"></span>
+        </div>
+        <div class="f-column">
+          <h2>CONTACT</h2>
+          <ul>
+            <li>
+              <a href="tel:+254724489637"><i class="fa-solid fa-phone" style="color: salmon;"></i>
+                +254724489637</a>
+            </li>
+            <li><a href="mailto:info@growhubcoachingservices.co.ke?subject = Feedback&body = Message"><i
+                  class="fa-solid fa-envelope"></i>
+                info@growhubcoachingservices.co.ke
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="f-row">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/growhubcoachingservices/?igshid=OTk0YzhjMDVlZA%3D%3D"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/growhubcoachingservices?mibextid=ZbWKwL"><i
+              class="fa-brands fa-facebook"></i></a>
+          <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+          <a href="https://www.linkedin.com/in/evlyne-muchiri"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="col">
+          <p>&#169; 2023 <a href="#">gi.chu.ki</a> all rights reserved</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
 
-    toggleBtn.onclick = function () {
-      dropDownMenu.classList.toggle('open')
-      const isOpen = dropDownMenu.classList.contains('open')
+  <!--== END OF FOOTER ==-->
+</body>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwgowa8VvdLhZDZiB0ZdUa9xnoziDmD2ZMi55s_PBIOi7Xn0uKp2OGyQZR7H6YxGszwwg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
 
-      toggleBtn.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-    }
-  </script>
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Thank You For Subscribing"
+        setTimeout(function () {
+          msg.innerHTML = ""
+        }, 3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+  const toggleBtn = document.querySelector('.toggle-btn')
+  const toggleBtnIcon = document.querySelector('.toggle-btn i')
+  const dropDownMenu = document.querySelector('.dropdown-menu')
+
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtn.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+</script>
 </body>
 
 
