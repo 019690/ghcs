@@ -676,6 +676,7 @@ height: 50vh;
 
 .f-column input{
  border: none;
+ margin-bottom: 10px;
  width: 250px;
  height: 45px;
  display: block;

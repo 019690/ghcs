@@ -559,8 +559,6 @@ header .toggle-btn {
   display: block;
   padding-left: 20px;
   margin: 10px 0;
-  text-transform: capitalize;
-  /* font-size: 1.2rem; */
 }
 
 .f-column .input-submit {
