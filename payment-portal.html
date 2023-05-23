@@ -73,10 +73,10 @@
     <div class="coaching-payment">
       <h2>confirm payment here</h2>
       <form>
-        <input type="text" name="text" id="" placeholder="ENTER YOUR FULL NAME">
-        <input type="email" name="email" id="" placeholder="ENTER YOU EMAIL">
-        <input type="text" name="text" id="" placeholder="PRODUCT PURCHASE">
-        <input type="number" name="number" id="" placeholder="TRANSACTION CODE">
+        <input type="text" name="text" id="name" placeholder="ENTER YOUR FULL NAME" required>
+        <input type="email" name="email" id="email" placeholder="ENTER YOU EMAIL" required>
+        <input type="text" name="text" id="product" placeholder="PRODUCT PURCHASE" required>
+        <input type="number" name="number" id="tCode" placeholder="TRANSACTION CODE" required>
       </form>
       <br>
       <p><input type="checkbox" name="read" id="abc" onclick="checkMe()">I have read and agree to the <a
@@ -84,8 +84,12 @@
           agreement</a>set forth by Eve the life coach</p>
       <br>
       <form>
-        <input type="submit" step="display: none" value="confirm payment" class="input-submit" id="sbt">
+        <input type="submit" step="" value="confirm payment" class="input-submit" id="sbt" onclick="message()">
       </form>
+      <div class="message">
+        <div class="success" id="success">Sent! Receipt and Product will be sent in your email.</div>
+        <div class="danger" id="danger">Fields can't be Empty!</div>
+      </div>
     </div>
 
     <div class="coaching-container">
@@ -173,6 +177,36 @@
 
   <!--== END OF FOOTER ==-->
   <script>
+    function message() {
+      var name = document.getElementById('name');
+      var email = document.getElementById('email');
+      var product = document.getElementById('product');
+      var tCode = document.getElementById('tCode');
+      const success = document.getElementById('success');
+      const danger = document.getElementById('danger');
+
+      if (name.value === '' || email.value === '' || product.value === '' || tCode.value === '') {
+        danger.style.display = 'block';
+      } else {
+        setTimeout(() => {
+          name.value = '';
+          email.value = '';
+          product.value = '';
+          tCode.value = '';
+        }, 10000);
+
+        success.style.display = 'block';
+      }
+
+      setTimeout(() => {
+        danger.style.display = 'none';
+        success.style.display = 'none';
+      }, 4000);
+    }
+
+
+
+
     function checkMe() {
       var cb = document.getElementById("abc");
       var text = document.getElementById("sbt");
@@ -182,7 +216,6 @@
         text.style.display = "none";
       }
     }
-
 
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwgowa8VvdLhZDZiB0ZdUa9xnoziDmD2ZMi55s_PBIOi7Xn0uKp2OGyQZR7H6YxGszwwg/exec'

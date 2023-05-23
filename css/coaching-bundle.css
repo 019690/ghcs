@@ -359,6 +359,7 @@ header .toggle-btn {
   margin: 10px 0;
   text-transform: uppercase;
   cursor: pointer;
+  display: none;
 }
 
 .coaching-payment .pay-method {
@@ -400,6 +401,45 @@ header .toggle-btn {
   align-items: center;
   font-weight: 600;
 }
+
+.message{
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.message .success{
+  font-size: 20px;
+  color: green;
+  position: absolute;
+  transition: 10s;
+  animation: buttons 10s linear;
+  display: none;
+}
+
+.message .danger{
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  transition: 10s;
+  animation: buttons 10s linear;
+  display: none;
+}
+
+@keyframes buttons {
+  0%{
+    transform: scale(0.1);
+  }
+  50%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
 
 .coaching-conatiner{
   margin: 10px;
