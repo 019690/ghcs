@@ -290,7 +290,6 @@ header .toggle-btn {
 .blog-sec{
  width: 100%;
  height: auto;
- /* margin-top: 2rem; */
  background: url(../assets/prog-intr0.JPG);
  background-size: cover;
  display: flex;
@@ -305,7 +304,6 @@ header .toggle-btn {
 }
 
 .bg-container h2{
- /* margin-top: 3rem; */
  text-transform: uppercase;
  font-size: 1.9rem;
  font-style: italic;
@@ -368,7 +366,6 @@ header .toggle-btn {
  border-radius: 1rem;
  float: left;
  margin-left: 30px;
- /* width: 40%; */
 }
 
 .your-coach .your-coach-content{
@@ -419,10 +416,10 @@ header .toggle-btn {
 
 .your-coach-content p {
   text-align: center;
-  /* padding-left: 0px; */
   padding: 10px;
 }
 }
+
 @media (max-width: 426px) {
 .your-coach{
   height: auto;
@@ -457,48 +454,49 @@ header .toggle-btn {
 
 /* == END OF YOUR COACH == */
 
+/* == HEALING == */
+.healing {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.healing .healing-content {
+  width: 60%;
+  padding: 40px;
+}
 
 .healing-content h2{
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
  font-weight: 900;
  font-size: 1rem;
  text-transform: uppercase;
- color: hsl(209, 61%, 16%);
-}
-
-.healing{
- display: flex;
- width: 100%;
- height: auto;
- margin-top: 20px;
- margin-bottom: 20px;
- justify-content: space-between;
+ color: var(--add-color);
 }
 
 .healing .healing-img {
  padding: 20px;
  height: 80vh;
- /* width: 40%; */
 }
 
-.healing .healing-content{
- width: 60%;
- padding: 40px;
+.healing P{
+  color: var(--heading-color);
 }
-
-.healing-content h2{
- text-align: center;
-} 
 
 .healing-content ol{
  text-align: left;
  padding-top: 0px;
  line-height: 2em;
  color: var(--add-color);
- /* list-style:; */
 }
 
+/* == END OF HEALING == */
+
+/* == HEALING == */
 .healing-2{
  display: flex;
  width: 100%;
@@ -508,14 +506,14 @@ header .toggle-btn {
  justify-content: space-between;
 }
 
+.healing-2 .healing-2-content {
+  width: 60%;
+  padding: 40px;
+}
+
 .healing-2 img{
  padding: 20px;
  height: 80vh;
-}
-
-.healing-2 .healing-2-content{
- width: 60%;
- padding: 40px;
 }
 
 .healing-2-content h2{
@@ -529,6 +527,36 @@ header .toggle-btn {
  padding-top: 20px;
  line-height: 2em;
  list-style: numeric;
+}
+
+.work {
+  height: auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+  align-content: center;
+  margin-top: 1.5rem;
+  padding: 15px;
+  border-radius: 1rem;
+  background-color: var(--add-color);
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn:hover{
+  color: var(--add-color);
+  background-color: var(--heading-color);
 }
 
 @media (max-width: 769px) {
@@ -656,58 +684,36 @@ header .toggle-btn {
 .work{
   height: auto;
 }
-
 }
+/* == END OF HEALING == */
 
-.work{
- height: auto;
- text-align: center;
- width: 100%;
- margin-bottom: 20px;
-}
-
-.btn{
- text-align: center;
- text-decoration: none;
- align-content: center;
- margin-top: 1.5rem;
- padding: 15px;
- border-radius: 1rem;
- /* margin-left: 100px; */
- background-color: var(--add-color);
-}
-
-.btn a{
- text-decoration: none;
- font-size: 1.1rem;
- font-weight: 700;
- text-transform: uppercase;
- color: white;
-}
-
+/* == SHOP == */
+/* ==+ EB-1 +== */
 .EB-1{
   height: auto;
   width: 100%;
   background: url(../assets/shop.jpg);
   background-size: cover;
-  text-align: center;
 }
 
 .EB-cont{
-  padding: 40px;
   color: var(--p-color);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .EB-cont h1{
   font-size: 2rem;
   font-weight: 800;
   color: var(--heading-color);
+  text-align: center;
 }
 
 .EB-cont p{
   padding: 10px;
+  text-align: center;
   font-size: 1.8rem;
-  color: white;
+  color: var(--body-color);
   font-weight: bold;
 }
 
@@ -726,6 +732,21 @@ header .toggle-btn {
   .EB-cont p{
     font-size: 1rem;
   }
+}
+
+/* ==+ END OF EB-1 +== */
+
+/* ==+ EB-2 +== */
+.EB-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.EB-2 h1 {
+  padding-bottom: 10px;
 }
 
 .wrapper{
@@ -768,16 +789,8 @@ header .toggle-btn {
   text-transform: uppercase;
 }
 
-.EB-2{
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 20px;
-}
-
-.EB-2 h1{
-  padding-bottom: 10px;
+.wrapper button:hover{
+  background-color: var(--body-color);
 }
 
 @media (max-width: 769px) {
@@ -829,85 +842,7 @@ margin-top: 20px;
 
 }
 
-.coaching-payment {
-  width: 300px;
-  padding: 10px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px;
-  border-radius: 1rem;
-  background-color: var(--heading-color);
-}
-
-.coaching-payment h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--body-color);
-}
-
-.coaching-payment p{
-  text-transform: uppercase;
-  line-height: 1.5rem;
-  text-align: center;
-  color: var(--body-color);
-}
-
-.coaching-payment form input {
-  border: none;
-  width: 250px;
-  height: 45px;
-  display: block;
-  padding-left: 20px;
-  margin: 10px 0;
-  text-transform: uppercase;
-}
-
-.coaching-payment .pay-method {
-  border: solid rgba(0, 0, 0, 0.238);
-  width: 250px;
-  height: 25px;
-  display: block;
-  padding-left: 20px;
-  /* margin: 10px 0; */
-  text-transform: uppercase;
-  background-color: blanchedalmond;
-  text-align: left;
-  justify-items: end;
-}
-
-.coaching-payment .terms {
-  border: solid rgba(0, 0, 0, 0.238);
-  width: 100%;
-  /* height: 2px; */
-  display: block;
-  padding-left: 20px;
-  /* margin: 10px 0; */
-  text-transform: uppercase;
-  background-color: blanchedalmond;
-  /* text-align: center; */
-  justify-items: end;
-}
-
-.coaching-payment .complete input {
-  border: none;
-  width: 100%;
-  height: 45px;
-  display: block;
-  padding: 10px;
-  margin: 10px 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: var(--p-color);
-  align-items: center;
-  font-weight: 600;
-}
-
-@media (max-width: 426px) {
- 
-}
-
+/* ==+ END OF EB-2 +== */
 
 /* =====FOOTER===== */
 
@@ -922,8 +857,7 @@ margin-top: 20px;
 }
 
 .f-column h2{
- color: rgb(255, 255, 255);
- /* margin-top: 10px; */
+ color: var(--body-color);
  font-size: 22px;
  position: relative;
  text-transform: uppercase;
@@ -935,7 +869,7 @@ margin-top: 20px;
 }
 
 .f-column ul li a{
- color: white;
+ color: var(--body-color);
  opacity: 0.7;
  text-decoration: none;
  transition: 0.5s;
