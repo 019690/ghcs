@@ -358,6 +358,7 @@ header .toggle-btn {
   padding-left: 20px;
   margin: 10px 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .coaching-payment .pay-method {

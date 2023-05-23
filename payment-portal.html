@@ -79,14 +79,13 @@
         <input type="number" name="number" id="" placeholder="TRANSACTION CODE">
       </form>
       <br>
-      <p><input type="checkbox" name="read" id="">I have read and agree to the <a href="./termsandconditions.html"
-          target="_blank">terms and
+      <p><input type="checkbox" name="read" id="abc" onclick="checkMe()">I have read and agree to the <a
+          href="./termsandconditions.html" target="_blank">terms and
           agreement</a>set forth by Eve the life coach</p>
       <br>
       <form>
-        <input type="submit" value="confirm payment" class="input-submit">
+        <input type="submit" step="display: none" value="confirm payment" class="input-submit" id="sbt">
       </form>
-      <span id="msg"></span>
     </div>
 
     <div class="coaching-container">
@@ -174,6 +173,18 @@
 
   <!--== END OF FOOTER ==-->
   <script>
+    function checkMe() {
+      var cb = document.getElementById("abc");
+      var text = document.getElementById("sbt");
+      if (cb.checked == true) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
+
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwgowa8VvdLhZDZiB0ZdUa9xnoziDmD2ZMi55s_PBIOi7Xn0uKp2OGyQZR7H6YxGszwwg/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")

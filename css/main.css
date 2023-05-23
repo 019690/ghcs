@@ -680,9 +680,6 @@ height: 50vh;
  height: 45px;
  display: block;
  padding-left: 20px;
- margin: 10px 0;
- text-transform: capitalize;
- /* font-size: 1.2rem; */
 }
 
 .f-column .input-submit{
@@ -715,6 +712,7 @@ height: 50vh;
   .footer{
     height: auto;
   }
+
  .footer .f-row{
   flex-direction: column;
   padding: 20px 30px;
@@ -921,19 +919,6 @@ height: 50vh;
   font-weight: 600;
 }
 
-.pg-1-cont button{
-  background-color: var(--heading-color);
-  border: var(--add-color-2);
-  color: black;
-  padding: 10px;
-  width: 70%;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 0.5rem;
-  margin-top: 2rem;
-}
-
 @media (max-width: 769px) {
   .pg-1-sect{
   height: auto;
@@ -957,13 +942,6 @@ height: 50vh;
   line-height: 1.5rem;
   font-weight: 600;
 }
-
-.pg-1-cont button{
-  padding: 10px;
-  width: 50%;
-  margin-top: 1rem;
-  font-size: 1rem;
-}
 }
 
 @media (max-width: 426px) {
@@ -984,13 +962,6 @@ height: 50vh;
   font-size: 0.8rem;
   line-height: 1.3rem;
   font-weight: 400;
-}
-
-.pg-1-cont button{
-  padding: 10px;
-  width: 100%;
-  margin-top: 10px;
-  font-size: 1rem;
 }
 }
 
@@ -1014,10 +985,8 @@ align-items: center;
 }
 
 .pg-1-WTE p{
-  /* padding-bottom: 0px; */
   font-size: 2rem;
   font-weight: 600;
-  /* text-transform: capitalize; */
 }
 
 .pg-1-WTE-cont{
@@ -1158,8 +1127,7 @@ align-items: center;
 
 .IS-img img{
   padding: 20px;
-  /* width: 40%; */
-  height: 80vh;
+  max-height: 80vh;
 }
 
 .IS-cont{
@@ -1288,7 +1256,7 @@ font-size: 1.3em;
 
 /* ===== END OF IS ===== */
 
-/* ===== PC ===== */
+/* ===== 6 week program ===== */
 
 .pg-1-PC{
   height: 90vh;
@@ -1316,14 +1284,14 @@ font-size: 1.3em;
 
 .PC-cont h2{
 text-transform: uppercase;
-color: coral;
+color: var(--add-color);
 padding: 10px;
 font-size: 1.5rem;
 }
 
 .PC-cont h6{
 text-transform: uppercase;
-color: coral;
+color: var(--add-color);
 padding-bottom: 10px;
 font-size: 1rem;
 }
@@ -1465,6 +1433,8 @@ list-style: circle;
   border-radius: 0.3rem;
 }
 }
+
+/* ===== end of 6 week program ===== */
 
 .pg-1-CC{
   height: 120vh;
