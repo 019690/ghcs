@@ -83,9 +83,6 @@
           href="./termsandconditions.html" target="_blank">terms and
           agreement</a>set forth by Eve the life coach</p>
       <br>
-      <!-- <form>
-        <input type="submit" step="" value="confirm payment" class="input-submit" id="sbt" onclick="message()">
-      </form> -->
       <div class="message">
         <div class="success" id="success">Sent! Receipt and Product will be sent in your email.</div>
         <div class="danger" id="danger">Fields can't be Empty!</div>
@@ -141,15 +138,14 @@
       const success = document.getElementById('success');
       const danger = document.getElementById('danger');
 
-      if (name.value === '' || email.value === '' || product.value === '' || tCode.value === '') {
+      if (name.value === '' || email.value === '' || tCode.value === '') {
         danger.style.display = 'block';
       } else {
         setTimeout(() => {
           name.value = '';
           email.value = '';
-          product.value = '';
           tCode.value = '';
-        }, 10000);
+        }, 1000);
 
         success.style.display = 'block';
       }
@@ -184,8 +180,7 @@
       const isOpen = dropDownMenu.classList.contains('open')
 
       toggleBtn.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
+      'fa-solid fa-bars'
     }
   </script>
 

@@ -86,7 +86,7 @@ header {
  justify-content: space-between;
  align-items: center;
  position: relative;
- /* z-index: 99; */
+ z-index: 99;
  box-shadow: 0 0 10px #0000;
  background: var(--body-color);
 }
@@ -121,12 +121,7 @@ header .logo h2 {
  text-decoration: rgba(0, 0, 0, 0.238);
 }
 
-.menu-1{
-  /* float: right; */
-}
-
 header ul {
-  /* flex: 2; */
   display: flex;
   justify-content: space-between 10px;
 }
@@ -168,14 +163,14 @@ header .toggle-btn{
   display: none;
   top: 60px;
   height: 0;
-  width: 200px;
+  width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   background: var(--heading-color);
   opacity: 0.6;
-  border-radius: 5px;overflow: hidden;
+  overflow: hidden;
 }
 
 .dropdown-menu.open{
@@ -184,7 +179,6 @@ header .toggle-btn{
 
 .dropdown-menu li a{
   padding: 0.7rem;
-  /* display: flex; */
   color: var(--body-color);
   align-items: center;
   justify-content: center;
@@ -197,6 +191,10 @@ header .toggle-btn{
 
 
  @media (max-width: 769px) {
+  header{
+    max-width: 100%;
+  }
+
   header ul{
     position: absolute;
     width: 50%;
@@ -224,13 +222,13 @@ header .toggle-btn{
 
   .dropdown-menu {
     display: block;
-    width: unset;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 426px) {
  header{
-  max-width: 425px;
+  max-width: 426px;
   height: 60px;
  }
 
@@ -275,9 +273,8 @@ header .menu {
  padding: 15px;
 }
 
-.dropdown-menu{
-  left: 2rem;
-  width: unset;
+.dropdown-menu li a{
+  font-size: 1rem;
 }
 } 
 
@@ -321,23 +318,24 @@ header .menu {
 
 .title-background .t-btn {
  border: solid var(--add-color);
+ background-color: var(--heading-color);
  border-radius: 0.6rem;
  padding: 1rem 1rem;
  margin-bottom: 20px;
  font-size: 1rem;
- text-transform: uppercase;
+ text-transform: capitalize;
  font-weight: 700;
  text-align: center;
  width: 40%;
  margin-top: 30px;
- background: transparent;
+ /* background: transparent; */
  opacity: 0.9;
  cursor: pointer;
 }
 
 .title-background button:hover{
  background: transparent;
- border: solid var(--add-color-2);
+ border: solid var(--p-color);
 }
 
 @media (max-width: 769px) {
@@ -363,7 +361,6 @@ header .menu {
 }
 
 .title-background .t-btn {
- /* margin-left: 60px; */
  width: 60%;
  margin-top: 0px;
  margin-bottom: 20px;
@@ -671,7 +668,7 @@ header .menu {
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 10px;
-  background-color: rgb(0, 100, 128);
+  background-color: var(--heading-color);
   opacity: 0.9;
   color: var(--add-color);
   cursor: pointer;
@@ -1110,7 +1107,7 @@ color: var(--body-color);
 .IS-cont button{
   width: 80%;
   padding: 10px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.5rem;
   cursor: pointer;
   font-weight: 700;
@@ -1166,7 +1163,6 @@ color: var(--body-color);
 
 @media (max-width: 426px) {
 .pg-1-IS{
-  /* display: flex; */
   height: auto;
   flex-direction: column;
   text-align: center;
@@ -1213,18 +1209,17 @@ color: var(--body-color);
 /* ===== 6 week program/3 MONTHS ===== */
 
 .pg-1-PC{
-  height: 90vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .PC-img img{
   padding: 20px;
-  /* width: 90%; */
-  height: 80vh;
+  max-height: 80vh;
 }
 
 .PC-cont{
@@ -1259,7 +1254,7 @@ color: var(--body-color);
 .PC-cont button{
   width: 80%;
   padding: 15px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
@@ -1281,16 +1276,9 @@ color: var(--body-color);
 }
 
 .PC-img img{
-  padding: 20px;
-  /* width: 40%; */
-  height: 80vh;
-}
-
-.PC-img h1{
-  padding: 20px;
-  /* margin-left: 20px; */
-  text-align: center;
-  text-transform: uppercase;
+  padding: 10px;
+  width: 80%;
+  height: auto;
 }
 
 .PC-cont{
@@ -1300,7 +1288,6 @@ color: var(--body-color);
   background-color: var(--heading-color);
   margin: 20px;
   height: auto;
-  /* height: %; */
 }
 
 .PC-cont h2{
@@ -1341,6 +1328,7 @@ list-style: circle;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  text-align: center;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -1348,9 +1336,8 @@ list-style: circle;
 
 .PC-img img{
   padding: 10px;
-  height: 80vh;
-  width: 100%;
-  /* margin: 10px; */
+  height: auto;
+  width: 80%;
 }
 
 .PC-cont{
@@ -1359,7 +1346,6 @@ list-style: circle;
   text-align: center;
   background-color: var(--heading-color);
   margin: 0px;
-  /* height: %; */
 }
 
 .PC-cont h2{
@@ -1380,7 +1366,6 @@ font-size: 1rem;
 .PC-cont li{
 padding-bottom: 10px;
 font-size: 1rem;
-/* list-style: butt; */
 line-height: 1rem;
 list-style: circle;
 }
