@@ -362,10 +362,9 @@ header .menu {
 
 .title-background .t-btn {
  width: 60%;
- margin-top: 0px;
+ margin-top: 20px;
  margin-bottom: 20px;
  padding: 2px;
- font-size: 0.6rem;
 }
 }
 
@@ -686,7 +685,6 @@ header .menu {
  width: 80%;
  margin-left: 10%;
  margin-right: 10%;
- font-size: 2rem;
 }
 }
 
@@ -867,9 +865,9 @@ header .menu {
 }
 
 .contact-container form input{
- border: solid black;
+ border: solid var(--p-color);
  border-radius: 10px;
- opacity: 0.2;
+ opacity: .9;
  width: 100%;
  height: 45px;
  display: block;
@@ -882,7 +880,7 @@ header .menu {
 .contact-container textarea{
  width: 100%;
  padding: 20px;
- opacity: 0.5;
+ opacity: 0.9;
  border: solid var(--p-color);
  border-radius: 10px;
  font-size: 1.2rem;

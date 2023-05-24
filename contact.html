@@ -76,11 +76,11 @@
     <div class="contact-container">
       <h1>contact us</h1>
       <p>Need to make an inquiry?</p>
-      <form action="">
-        <input type="text" name="your name" id="" placeholder="ENTER YOUR FULL NAME">
-        <input type="text" name="" id="" placeholder="ENTER YOUR PHONE NUMBER">
-        <input type="email" name="" id="" placeholder="ENTER YOUR EMAIL">
-        <textarea name="" id="" cols="" rows="" placeholder="WRITE TO US"></textarea>
+      <form action="" name="submit-to-google-sheet">
+        <input type="text" name="name" id="" placeholder="ENTER YOUR FULL NAME">
+        <input type="number" name="phone" id="" placeholder="ENTER YOUR PHONE NUMBER">
+        <input type="email" name="email" id="" placeholder="ENTER YOUR EMAIL">
+        <textarea id="" name="message" cols="" rows="" placeholder="WRITE TO US"></textarea>
         <input type="submit" value="SUBMIT">
       </form>
     </div>
@@ -100,22 +100,19 @@
   <!--== end of contact page ==-->
 </body>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwgowa8VvdLhZDZiB0ZdUa9xnoziDmD2ZMi55s_PBIOi7Xn0uKp2OGyQZR7H6YxGszwwg/exec'
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwJaw1uqANMPGZNm2XU1Zr6uWxgJnE_0w5FoRwhPyyntDxmIAHIc5_EfSdbzfjzdeW_/exec'
   const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => {
-        msg.innerHTML = "Thank You For Subscribing"
-        setTimeout(function () {
-          msg.innerHTML = ""
-        }, 3000)
-        form.reset()
-      })
+      .then(response => console.log('Success!', response))
+    form.reset()
+
       .catch(error => console.error('Error!', error.message))
   })
+
 
   const toggleBtn = document.querySelector('.toggle-btn')
   const toggleBtnIcon = document.querySelector('.toggle-btn i')
@@ -126,8 +123,7 @@
     const isOpen = dropDownMenu.classList.contains('open')
 
     toggleBtn.classList = isOpen
-      ? 'fa-solid fa-xmark'
-      : 'fa-solid fa-bars'
+    'fa-solid fa-bars'
   }
 </script>
 
