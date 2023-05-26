@@ -16,11 +16,11 @@
   --heading-color: hsl(209, 61%, 16%);
 
   /* grey used for paragraphs */
-  --p-color: hsl(210, 22%, 49%);
+  --p-color: hsl(209, 61%, 16%);
   --link-color: #222;
 
   /* other colors */
-  --add-color: #fa8072;
+  --add-color: orange;
   --add-color-2: rgba(255, 166, 0, 0.357);
 }
 
@@ -154,6 +154,7 @@ header .toggle-btn{
   color: var(--heading-color);
   font-size: 1.5rem;
   cursor: pointer;
+  padding-right: 40px;
   display: none;
 }
 
@@ -169,7 +170,7 @@ header .toggle-btn{
   text-align: center;
   text-transform: uppercase;
   background: var(--heading-color);
-  opacity: 0.6;
+  /* opacity: 0.6; */
   overflow: hidden;
 }
 
@@ -218,6 +219,8 @@ header .toggle-btn{
 
   header .toggle-btn{
     display: block;
+    /* padding-right: 20px; */
+    /* float: left; */
   }
 
   .dropdown-menu {
