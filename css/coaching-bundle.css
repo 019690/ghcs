@@ -16,11 +16,11 @@
   --heading-color: hsl(209, 61%, 16%);
 
   /* grey used for paragraphs */
-  --p-color: hsl(210, 22%, 49%);
+  --p-color: hsl(209, 61%, 16%);
   --link-color: #222;
 
   /* other colors */
-  --add-color: #fa8072;
+  --add-color: orange;
   --add-color-2: rgba(255, 166, 0, 0.357);
 }
 
