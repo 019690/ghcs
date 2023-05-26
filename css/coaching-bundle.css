@@ -304,6 +304,10 @@ header .toggle-btn {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.coaching-payment p{
+  color: var(--body-color);
+}
+
 .coaching-payment form input {
   border: none;
   width: 100%;
