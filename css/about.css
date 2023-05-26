@@ -160,6 +160,7 @@ header .toggle-btn {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+  padding-right: 20px;
 }
 
 .dropdown-menu {
@@ -168,13 +169,13 @@ header .toggle-btn {
   display: none;
   top: 60px;
   height: 0;
-  width: 200px;
+  width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   background: var(--heading-color);
-  opacity: 0.6;
+  /* opacity: 0.6; */
   border-radius: 5px;
   overflow: hidden;
 }
