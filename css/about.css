@@ -377,7 +377,7 @@ header .toggle-btn {
 .your-coach-content h2{
  text-align: center;
  text-transform: uppercase;
- color: darkblue;
+ color: var(--add-color);
  padding-left: 50px;
 }
 
@@ -386,6 +386,7 @@ header .toggle-btn {
  padding-left: 50px;
  padding-right: 50px;
   padding-top: 20px;
+  color: var(--link-color);
 }
 
 @media (max-width: 769px) {
@@ -757,7 +758,7 @@ header .toggle-btn {
   padding: 20px;
   width: 70%;
   text-align: center;
-  background-color: var(--add-color);
+  background-color: var(--heading-color);
 }
 
 .wrapper img{
@@ -765,17 +766,17 @@ header .toggle-btn {
   max-height: 200px;
   margin-right: 15px;
   float: left;
-  border: 3px solid var(--heading-color);
+  border: 3px solid var(--add-color);
 }
 
 .txt h1{
-  color: var(--heading-color);
+  color: var(--add-color);
   font-size: 1.3rem;
   text-align: center;
 }
 
 .txt p{
-  color: var(--heading-color);
+  color: var(--body-color);
   font-size: 1rem;
   text-align: center;
   padding: 10px;
@@ -788,13 +789,13 @@ header .toggle-btn {
   margin-top: 10px;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--add-color);
-  background-color: var(--heading-color);
+  color: var(--body-color);
+  background-color: var(--add-color);
   text-transform: uppercase;
 }
 
 .wrapper button:hover{
-  background-color: var(--body-color);
+  background-color: var(--link-color);
 }
 
 @media (max-width: 769px) {
@@ -851,7 +852,7 @@ header .toggle-btn {
 /* =====FOOTER===== */
 
 .footer .f-container{
- background-color: rgba(17, 86, 140, 0.654);
+ background-color: var(--heading-color);
 }
 
 .f-row{
@@ -868,20 +869,24 @@ header .toggle-btn {
  text-decoration: underline red;
 }
 
+.f-column h3 {
+  color: var(--body-color);
+}
+
 .f-column ul li{
  padding: 10px 0;
 }
 
 .f-column ul li a{
  color: var(--body-color);
- opacity: 0.7;
+ /* opacity: 0.7; */
  text-decoration: none;
  transition: 0.5s;
  font-size: 16px;
 }
 
 .f-column ul li a:hover{
- opacity: 1;
+ opacity: 2;
 }
 
 .f-column input{
@@ -903,8 +908,16 @@ header .toggle-btn {
  cursor: pointer;
 }
 
-.col{
- color: rgb(231, 231, 234);
+.col {
+  color: rgb(231, 231, 234);
+}
+
+.col a {
+  color: var(--add-color);
+}
+
+.col p {
+  color: var(--body-color);
 }
 
 .f-row .social-icons i{

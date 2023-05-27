@@ -1316,10 +1316,13 @@ color: var(--body-color);
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
+  color: var(--body-color);
+  background-color: var(--add-color);
 }
 
 .PC-cont button:hover {
-  background-color: var(--link-color);
+  color: var(--body-color);
+    background-color: var(--link-color);
 }
 
 @media (max-width: 769px) {
@@ -1458,7 +1461,7 @@ list-style: circle;
 
 .s-content {
   width: 300px;
-  background: rgba(9, 67, 137, 0.489);
+  background: #858375;
   margin: 10px;
   overflow: hidden;
   border: 1px solid white;
@@ -1487,7 +1490,7 @@ list-style: circle;
 }
 
 .blog-txt a{
-  color: var(--heading-color);
+  color: var(--add-color);
   font-size: 1.2rem;
 }
 
@@ -1503,11 +1506,11 @@ list-style: circle;
 .blog-txt p {
   overflow: hidden;
   text-overflow: clip;
-  color: var(--body-color);
+  color: var(--link-color);
 }
 
 .blog-txt a:hover {
-  color: var(--add-color);
+  color: var(--heading-color);
 }
 
 @media (max-width: 769px) {
