@@ -339,6 +339,7 @@ color: var(--body-color);
 .title-background button:hover{
  background: transparent;
  border: solid var(--link-color);
+ color: var(--add-color);
 }
 
 @media (max-width: 769px) {
