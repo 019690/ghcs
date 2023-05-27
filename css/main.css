@@ -609,6 +609,10 @@ color: var(--body-color);
 }
 
 
+.WTE p{
+  color: var(--link-color);
+}
+
 @media (max-width: 769px) {
   .pg-1-WTE {
     height: auto;
@@ -716,6 +720,13 @@ color: var(--body-color);
   cursor: pointer;
 }
 
+.btn a{
+  color: var(--body-color);
+}
+.btn a:hover{
+  color: var(--add-color);
+}
+
 .btn:hover {
   background: transparent;
   border: solid var(--link-color);
@@ -794,7 +805,7 @@ color: var(--body-color);
 .f-column .input-submit{
  padding: 0 20px;
  border: none;
- color: white;
+ color: var(--body-color);
  background-color: var(--add-color);
  font-size: 1.3rem;
  font-weight: 800;
@@ -803,6 +814,10 @@ color: var(--body-color);
 
 .col{
  color: rgb(231, 231, 234);
+}
+
+.col p{
+  color: var(--body-color);
 }
 
 .f-row .social-icons i{
