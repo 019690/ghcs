@@ -302,13 +302,7 @@ header .menu {
 .title-background h3{
   text-align: center;
   font-size: 1.8rem;
-  color: var(--add-color);
-}
-
-.title-background p{
-  text-align: center;
-  font-size: 1rem;
-  color: var(--body-color);
+  color: var(--link-color);
 }
 
 .title-background ol{
@@ -317,6 +311,7 @@ header .menu {
   text-transform: capitalize;
   font-size: 1.3rem;
   font-weight: 600;
+  color: var(--body-color);
 }
 
 .title-background .t-btn {
@@ -476,6 +471,7 @@ color: var(--body-color);
 .ys-content button:hover {
   background: transparent;
   border: solid var(--link-color);
+  color: var(--add-color);
 }
 
 @media (max-width: 769px) {
@@ -721,13 +717,6 @@ color: var(--body-color);
   cursor: pointer;
 }
 
-/* .btn a{
-  color: var(--body-color);
-} */
-/* .btn a:hover{
-  color: var(--add-color);
-} */
-
 .btn:hover {
   background: transparent;
   border: solid var(--link-color);
@@ -779,6 +768,10 @@ color: var(--body-color);
  text-decoration: underline var(--add-color);
 }
 
+.f-column h3{
+  color: var(--body-color);
+}
+
 .f-column ul li{
  padding: 10px 0;
 }
@@ -816,6 +809,10 @@ color: var(--body-color);
 
 .col{
  color: rgb(231, 231, 234);
+}
+
+.col a{
+  color: var(--add-color);
 }
 
 .col p{
@@ -1048,7 +1045,7 @@ color: var(--body-color);
 
 .pg-1-cont h1{
   text-transform: uppercase;
-  color: var(--add-color);
+  color: var(--link-colorr);
   font-size: 1.5rem;
   font-weight: 800;
   padding-bottom: 3rem;
@@ -1169,10 +1166,12 @@ color: var(--body-color);
   font-size: 1.5rem;
   cursor: pointer;
   font-weight: 700;
+  color: var(--body-color);
+  background-color: var(--add-color);
 }
 
 .IS-cont button:hover {
-  color: var(--p-color);
+  color: var(--body-color);
   background-color: var(--link-color);
 }
 
