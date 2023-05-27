@@ -919,6 +919,7 @@ color: var(--body-color);
 .contact-container p{
  font-size: 1.2rem;
  text-align: center;
+ color: var(--body-color);
 }
 
 .contact-container form input{
