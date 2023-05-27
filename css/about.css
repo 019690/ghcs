@@ -18,10 +18,10 @@
 
   /* grey used for paragraphs */
   --p-color: #002339;
-  --link-color: #222;
+  --link-color: #000000;
 
   /* other colors */
-  --add-color: #c80e0a;
+  --add-color: #F40009;
   --add-color-2: rgba(255, 166, 0, 0.357);
 }
 
@@ -94,7 +94,7 @@ header {
 
 header hr {
   height: 0.15rem;
-  background-color: var(--add-color);
+  background-color: var(--link-color);
   width: 85%;
   margin-left: 47px;
 }
@@ -107,7 +107,7 @@ header hr {
 header .logo h1 {
   flex: 1;
   font-size: 1rem;
-  color: var(--p-color);
+  color: var(--add-color);
   margin-left: 50px;
   text-transform: uppercase;
   text-align: center;
@@ -115,7 +115,7 @@ header .logo h1 {
 
 header .logo h2 {
   flex: 1;
-  color: var(--p-color);
+  color: var(--add-color);
   margin-left: 50px;
   text-transform: capitalize;
   text-align: center;
@@ -137,27 +137,27 @@ header ul li {
 }
 
 header ul li a i {
-  color: var(--link-color);
+  color: var(--add-color);
 }
 
 header ul li a i:hover {
-  color: var(--add-color);
+  color: var(--link-color);
 }
 
 header ul li a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--add-color);
   font-weight: 600;
   text-transform: uppercase;
   padding: 10px 15px;
 }
 
 header ul li a:hover {
-  border-bottom: 2px solid var(--add-color);
+  border-bottom: 2px solid var(--link-color);
 }
 
 header .toggle-btn {
-  color: var(--heading-color);
+  color: var(--link-color);
   font-size: 1.5rem;
   cursor: pointer;
   display: none;

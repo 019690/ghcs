@@ -17,10 +17,10 @@
 
   /* grey used for paragraphs */
   --p-color: #002339;
-  --link-color: #222;
+  --link-color: #000000;
 
   /* other colors */
---add-color: #c80e0a;
+--add-color: #F40009;
   --add-color-2: rgba(255, 166, 0, 0.357);
 }
 
@@ -93,7 +93,7 @@ header {
 
 header hr {
  height: 0.15rem;
- background-color: var(--add-color);
+ background-color: var(--link-color);
  width: 85%;
  margin-left: 47px;
 }
@@ -106,7 +106,7 @@ header hr {
 header .logo h1 {
  flex: 1;
  font-size: 1rem;
- color: var(--p-color);
+ color: var(--add-color);
  margin-left: 50px;
  text-transform: uppercase;
  text-align: center;
@@ -114,7 +114,7 @@ header .logo h1 {
 
 header .logo h2 {
  flex: 1;
- color: var(--p-color);
+ color: var(--add-color);
  margin-left: 50px;
  text-transform: capitalize;
  text-align: center;
@@ -131,27 +131,27 @@ header ul li {
 }
 
 header ul li a i{
- color: var(--link-color);
+ color: var(--add-color);
 }
 
 header ul li a i:hover{
- color: var(--add-color);
+ color: var(--link-color);
 }
 
 header ul li a {
  text-decoration: none;
- color: var(--link-color);
+ color: var(--add-color);
  font-weight: 600;
  text-transform: uppercase;
  padding: 10px 15px;
 }
 
 header ul li a:hover {
- border-bottom: 2px solid var(--add-color);
+ border-bottom: 2px solid var(--link-color);
 }
 
 header .toggle-btn{
-  color: var(--heading-color);
+  color: var(--link-color);
   font-size: 1.5rem;
   cursor: pointer;
   padding-right: 20px;
@@ -302,7 +302,7 @@ header .menu {
 .title-background h3{
   text-align: center;
   font-size: 1.8rem;
-  color: var(--heading-color);
+  color: var(--add-color);
 }
 
 .title-background p{
@@ -321,7 +321,7 @@ header .menu {
 
 .title-background .t-btn {
  border: solid var(--add-color);
- background-color: var(--heading-color);
+ background-color: var(--add-color);
  border-radius: 0.6rem;
  padding: 1rem 1rem;
  margin-bottom: 20px;
@@ -331,14 +331,14 @@ header .menu {
  text-align: center;
  width: 40%;
  margin-top: 30px;
- /* background: transparent; */
+color: var(--body-color);
  opacity: 0.9;
  cursor: pointer;
 }
 
 .title-background button:hover{
  background: transparent;
- border: solid var(--p-color);
+ border: solid var(--link-color);
 }
 
 @media (max-width: 769px) {
@@ -455,6 +455,28 @@ header .menu {
  /* line-height: 1.5rem; */
 }
 
+.ys-content .t-btn {
+  border: solid var(--add-color);
+  background-color: var(--add-color);
+  border-radius: 0.6rem;
+  padding: 1rem 1rem;
+  /* margin-bottom: 20px; */
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  color: var(--body-color);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.ys-content button:hover {
+  background: transparent;
+  border: solid var(--link-color);
+}
+
 @media (max-width: 769px) {
   .your-story{
  height: auto;
@@ -478,6 +500,13 @@ header .menu {
 .ys-content p{
  margin-top: 10px;
  text-align: center;
+}
+
+.ys-content .t-btn {
+  width: 100%;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  padding: 2px;
 }
 }
 
@@ -506,6 +535,14 @@ header .menu {
  margin-top: 10px;
  text-align: center;
 }
+
+.ys-content .t-btn {
+  width: 100%;
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+  padding: 2px;
+  font-size: 0.6rem;
+}
 }
 
 /* ===== END OF YOUR STORY ===== */
@@ -525,11 +562,13 @@ header .menu {
 .pg-1-WTE h1 {
   padding-top: 0px;
   text-transform: capitalize;
+  color: var(--link-color);
 }
 
 .pg-1-WTE p {
   font-size: 2rem;
   font-weight: 600;
+  color: var(--add-color);
 }
 
 .pg-1-WTE-cont {
@@ -559,7 +598,8 @@ header .menu {
 .WTE .WTE-text span {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.7srem;
+  font-size: 1.7rem;
+  color: var(--add-color);
 }
 
 .WTE .WTE-text p {
@@ -670,15 +710,15 @@ header .menu {
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 10px;
-  background-color: var(--heading-color);
+  background-color: var(--add-color);
   opacity: 0.9;
-  color: var(--add-color);
+  color: var(--body-color);
   cursor: pointer;
 }
 
 .btn:hover {
   background: transparent;
-  border: solid var(--add-color-2);
+  border: solid var(--link-color);
 }
 
 @media (max-width: 769px) {
@@ -708,7 +748,7 @@ header .menu {
 /* =====FOOTER===== */
 
 .footer .f-container{
- background-color: rgba(17, 86, 140, 0.654);
+ background-color: var(--p-color);
 }
 
 .f-row{
@@ -718,12 +758,12 @@ header .menu {
 }
 
 .f-column h2{
- color: rgb(255, 255, 255);
+ color: var(--body-color);
  /* margin-top: 10px; */
  font-size: 22px;
  position: relative;
  text-transform: uppercase;
- text-decoration: underline red;
+ text-decoration: underline var(--add-color);
 }
 
 .f-column ul li{
@@ -732,14 +772,14 @@ header .menu {
 
 .f-column ul li a{
  color: white;
- opacity: 0.7;
+ opacity: 1;
  text-decoration: none;
  transition: 0.5s;
  font-size: 16px;
 }
 
 .f-column ul li a:hover{
- opacity: 1;
+ opacity: 2;
 }
 
 .f-column input{
