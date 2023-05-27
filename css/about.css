@@ -13,14 +13,15 @@
   --body-color: #ffff;
 
   /* darkest grey - used for headings */
-  --heading-color: hsl(209, 61%, 16%);
+  /* --heading-color: hsl(209, 61%, 16%); */
+  --heading-color: #002339;
 
   /* grey used for paragraphs */
-  --p-color: hsl(209, 61%, 16%);
+  --p-color: #002339;
   --link-color: #222;
 
   /* other colors */
-  --add-color: #dd571c;
+  --add-color: #c80e0a;
   --add-color-2: rgba(255, 166, 0, 0.357);
 }
 
