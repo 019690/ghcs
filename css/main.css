@@ -70,7 +70,7 @@ i {
 
 a{
  text-decoration: none;
- /* color: var(--add-color); */
+ color: var(--body-color);
 }
 
 main{
