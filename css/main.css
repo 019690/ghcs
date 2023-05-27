@@ -70,7 +70,7 @@ i {
 
 a{
  text-decoration: none;
- color: var(--add-color);
+ /* color: var(--add-color); */
 }
 
 main{
@@ -720,16 +720,17 @@ color: var(--body-color);
   cursor: pointer;
 }
 
-.btn a{
+/* .btn a{
   color: var(--body-color);
-}
-.btn a:hover{
+} */
+/* .btn a:hover{
   color: var(--add-color);
-}
+} */
 
 .btn:hover {
   background: transparent;
   border: solid var(--link-color);
+  color: var(--add-color);
 }
 
 @media (max-width: 769px) {
