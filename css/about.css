@@ -326,8 +326,8 @@ header .toggle-btn {
 
   .bg-container{
  margin-left: 1rem;
- margin-top: 4rem;
- margin-bottom: 4rem;
+ margin-top: 6rem;
+ margin-bottom: 6rem;
  width: 50%;
 }
 
@@ -515,6 +515,7 @@ header .toggle-btn {
  margin-top: 20px;
  margin-bottom: 0px;
  justify-content: space-between;
+ text-align: center;
 }
 
 .healing-2 .healing-2-content {
@@ -596,7 +597,7 @@ header .toggle-btn {
 
 .healing-img img {
   padding: 10px;
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
@@ -612,7 +613,7 @@ header .toggle-btn {
 
 .healing-2-img img {
   padding: 10px;
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
@@ -662,7 +663,7 @@ header .toggle-btn {
 
 .healing-img img {
   padding: 10px;
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 
@@ -679,7 +680,7 @@ header .toggle-btn {
 
 .healing-2-img img {
   padding: 10px;
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 
