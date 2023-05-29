@@ -618,16 +618,61 @@ header .toggle-btn {
 }
 
 .receive{
+  padding: 20px;
+  background-color: var(--body-color);
+  border:solid var(--add-color);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.receive h1{
+  font-size: 2rem;
+  color: var(--add-color);
   text-align: center;
-  width: 100%;
 }
 
 .receive h3{
-  color: var(--heading-color);
+  color: var(--link-color);
   text-align: center;
 }
 
 .receive p{
   color: var(--link-color);
   text-align: center;
+}
+
+@media (max-width: 769px) {
+.receive h1{
+  font-size: 1rem;
+}
+
+.receive h3{
+  color: var(--link-color);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.receive p{
+  color: var(--link-color);
+  text-align: center;
+}
+}
+
+
+@media (max-width: 426px) {
+.receive h1{
+  font-size: 0.9rem;
+}
+
+.receive h3{
+  font-size: 0.8rem;
+}
+
+.receive p{
+  font-size: 0.7rem;
+}
 }
