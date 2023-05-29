@@ -824,7 +824,7 @@ header .toggle-btn {
 }
 
 .wrapper img{
-  margin-left: 0px;
+  margin-right: 0px;
 }
 
  .txt h1{
@@ -846,6 +846,17 @@ header .toggle-btn {
 @media (max-width: 426px) {
 .EB-2 h1{
   font-size: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.wrapper img {
+  margin-right: 0px;
 }
 
 .txt h1{
