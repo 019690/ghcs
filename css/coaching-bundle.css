@@ -616,3 +616,18 @@ header .toggle-btn {
   }
 
 }
+
+.receive{
+  text-align: center;
+  width: 100%;
+}
+
+.receive h3{
+  color: var(--heading-color);
+  text-align: center;
+}
+
+.receive p{
+  color: var(--link-color);
+  text-align: center;
+}
