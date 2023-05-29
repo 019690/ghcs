@@ -13,11 +13,11 @@
   --body-color: #ffff;
 
   /* darkest grey - used for headings */
-  --heading-color: hsl(209, 61%, 16%);
+  --heading-color: #002339;
 
   /* grey used for paragraphs */
-  --p-color: hsl(209, 61%, 16%);
-  --link-color: #222;
+  --p-color: #002339;
+  --link-color: #000000;
 
   /* other colors */
   --add-color: #F40009;
