@@ -197,11 +197,11 @@ header .toggle-btn {
   color: var(--add-color);
 }
 
-.dropdown-menu ul li a i {
+.dropdown-menu li a i {
   color: var(--add-color);
 }
 
-.dropdown-menu ul li a i:hover {
+.dropdown-menu  li a i:hover {
   color: var(--link-color);
 }
 
