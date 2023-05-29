@@ -806,7 +806,7 @@ header .toggle-btn {
 
 @media (max-width: 769px) {
  .txt h1{
-  color: var(--heading-color);
+  color: var(--add-color);
   font-size: 1.3rem;
   text-align: center;
 }
@@ -828,7 +828,7 @@ header .toggle-btn {
 
 .txt h1{
   font-size: 0.9rem;
-
+color: var(--add-color);
 }
 
 .txt p{
