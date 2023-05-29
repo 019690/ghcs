@@ -197,7 +197,13 @@ header .toggle-btn {
   color: var(--add-color);
 }
 
+.dropdown-menu ul li a i {
+  color: var(--add-color);
+}
 
+.dropdown-menu ul li a i:hover {
+  color: var(--link-color);
+}
 
 @media (max-width: 769px) {
   header ul {
