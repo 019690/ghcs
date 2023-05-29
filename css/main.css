@@ -292,7 +292,7 @@ header .menu {
 /* ===== PAGE TITLE ===== */
 .page-title{
  display: flex;
- background: url(../assets/HPimg.JPG);
+ background: url(./assets/HPimg.JPG);
  background-size: cover;
  height: auto;
 }
