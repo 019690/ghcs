@@ -177,7 +177,7 @@ header .toggle-btn {
   text-transform: uppercase;
   background: var(--heading-color);
   /* opacity: 0.6; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   overflow: hidden;
 }
 
@@ -234,7 +234,7 @@ header .toggle-btn {
 
   .dropdown-menu {
     display: block;
-    width: unset;
+    width: 100%;
   }
 }
 
@@ -286,8 +286,8 @@ header .toggle-btn {
   }
 
   .dropdown-menu {
-    left: 2rem;
-    width: unset;
+    /* left: 2rem; */
+    width: 100%;
   }
 }
 
@@ -812,22 +812,11 @@ header .toggle-btn {
 }
 
 .txt p{
-  color: var(--heading-color);
+  color: var(--body-color);
   font-size: 1rem;
   text-align: center;
   padding: 10px;
   padding-top: 20px;
-}
-
-.wrapper button{
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--add-color);
-  background-color: var(--heading-color);
-  text-transform: uppercase;
 }
 
 }
@@ -848,7 +837,7 @@ header .toggle-btn {
 }
 
 .wrapper button{
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 
 }
