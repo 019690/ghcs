@@ -321,12 +321,13 @@ header .toggle-btn {
 
 @media (max-width: 769px) {
   .blog-sec{
-    height: 90vh;
+    height: auto;
   }
 
   .bg-container{
  margin-left: 1rem;
  margin-top: 4rem;
+ margin-bottom: 4rem;
  width: 50%;
 }
 
@@ -341,12 +342,13 @@ header .toggle-btn {
 
 @media (max-width: 426px) {
   .blog-sec{
-    height: 80vh;
+    height: auto;
   }
 
   .bg-container{
  margin-left: 1rem;
- margin-top: 1rem;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
  width: 50%;
 }
 
@@ -591,12 +593,7 @@ header .toggle-btn {
  width: 100%;
  font-size: 1.2rem;
 } 
-/* 
-.healing .healing-img img {
-  padding: 20px;
-  height: 50vh;
-  width: 60%;
-} */
+
 .healing-img img {
   padding: 10px;
   width: 80%;
