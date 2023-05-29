@@ -956,7 +956,10 @@ header .toggle-btn {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
+   .footer{
+    height: auto;
+  }
  .footer .f-row{
   flex-direction: column;
   padding: 20px 30px;
@@ -981,4 +984,5 @@ header .toggle-btn {
  }
 
 }
+
 /* ===== END OF FOOTER===== */
