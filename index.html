@@ -236,14 +236,10 @@
           </ul>
         </div>
         <div class="f-column">
-          <h2>NEWSLETTER</h2>
-          <h3>Subscribe to our Newsletter</h3>
-          <form name="submit-to-google-sheet">
-            <input type="text" name="text" id="" placeholder="FULL NAMES" required>
-            <input type="email" name="email" id="" placeholder="EMAIL" required>
-            <input type="submit" value="submit" class="input-submit">
-          </form>
-          <span id="msg"></span>
+          <iframe width="400" height="260"
+            src="https://684c796c.sibforms.com/serve/MUIEALk8I0h-Nny0sEvuZZUomkljwdQe88N2ka4eiGE46FpyiQirIx5vKqGMCUgQ_KaYinfgfUQJkvTHyoSIfAtjGpKS4AS1JzlMvowvgLmB8oSdPHXDbAmbHbVXpuBfBKYzPgRypWxXATfhZgPd93WIrbD-eOYaBUT8jAdYRkKKJxo6PNf2urtFNqJo5TUcDmvMXlNbrLxamhu_"
+            frameborder="0" scrolling="auto" allowfullscreen
+            style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
         </div>
         <div class="f-column">
           <h2>CONTACT</h2>
@@ -253,9 +249,9 @@
                 +254724489637</a>
             </li>
             <!-- <li> <a href="#"> <i class="fa-solid fa-envelope"></i> eve.biz@gmail.com</li> </a> -->
-            <li><a href="mailto:emuchiri.bizhub@gmail.com?subject = Feedback&body = Message"><i
+            <li><a href="mailto:info@growhubcoachingservices.co.ke?subject = Feedback&body = Message"><i
                   class="fa-solid fa-envelope" style="color: red;"></i>
-                emuchiri.bizhub@gmail.com
+                info@growhubcoachingservices.co.ke
               </a></li>
           </ul>
         </div>
@@ -271,8 +267,11 @@
           <a href="https://www.linkedin.com/in/evlyne-muchiri"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="col">
-          <p>&#169; 2023 <a href="mailto:gichukimuchiri80@gmail.com?subject = Feedback&body = Message">gi.chu.ki</a> all
-            rights reserved</p>
+          <p>&#169; 2023 all rights reserved</p>
+        </div>
+        <div class="col">
+          <p> Developed by: <a href="mailto:gichukimuchiri80@gmail.com?subject = Feedback&body = Message">gi.chu.ki</a>
+          </p>
         </div>
       </div>
     </div>
@@ -281,24 +280,6 @@
 
   <!--== END OF FOOTER ==-->
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgowa8VvdLhZDZiB0ZdUa9xnoziDmD2ZMi55s_PBIOi7Xn0uKp2OGyQZR7H6YxGszwwg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          msg.innerHTML = "Thank You For Subscribing"
-          setTimeout(function () {
-            msg.innerHTML = ""
-          }, 3000)
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-
-
     const toggleBtn = document.querySelector('.toggle-btn')
     const toggleBtnIcon = document.querySelector('.toggle-btn i')
     const dropDownMenu = document.querySelector('.dropdown-menu')
