@@ -77,12 +77,12 @@
     <div class="contact-container">
       <h1>contact us</h1>
       <p>Need to make an inquiry?</p>
-      <form action="" name="submit-to-google-sheet">
-        <input type="text" name="name" id="" placeholder="ENTER YOUR FULL NAME">
-        <input type="number" name="phone" id="" placeholder="ENTER YOUR PHONE NUMBER">
-        <input type="email" name="email" id="" placeholder="ENTER YOUR EMAIL">
-        <textarea id="" name="message" cols="" rows="" placeholder="WRITE TO US"></textarea>
-        <input type="submit" value="SUBMIT">
+      <form action="https://formsubmit.co/8bbf60ed4ccdac5c9cbd2d17878da616" method="POST">
+        <input type="text" name="name" id="name" placeholder="ENTER YOUR FULL NAME" required>
+        <input type="number" name="phone" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required>
+        <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+        <textarea id="message" name="message" cols="" rows="" placeholder="WRITE TO US" required></textarea>
+        <button type="submit">send</button>
       </form>
     </div>
     <div class="social-icons">
@@ -100,19 +100,20 @@
 
   <!--== end of contact page ==-->
 </body>
+
 <script>
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwJaw1uqANMPGZNm2XU1Zr6uWxgJnE_0w5FoRwhPyyntDxmIAHIc5_EfSdbzfjzdeW_/exec'
-  const form = document.forms['submit-to-google-sheet']
+  // const scriptURL = 'https://script.google.com/macros/s/AKfycbwJaw1uqANMPGZNm2XU1Zr6uWxgJnE_0w5FoRwhPyyntDxmIAHIc5_EfSdbzfjzdeW_/exec'
+  // const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => console.log('Success!', response))
-    form.reset()
+  // form.addEventListener('submit', e => {
+  //   e.preventDefault()
+  //   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+  //     .then(response => console.log('Success!', response))
+  //   form.reset()
 
-      .catch(error => console.error('Error!', error.message))
-  })
+  //     .catch(error => console.error('Error!', error.message))
+  // })
 
 
   const toggleBtn = document.querySelector('.toggle-btn')

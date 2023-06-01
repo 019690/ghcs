@@ -951,6 +951,19 @@ color: var(--body-color);
  text-align: center;
 }
 
+.contact-container button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid var(--p-color);
+  background-color: var(--add-color);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--body-color);
+}
+
 .contact .social-icons i{
   color: var(--body-color);
   font-size: 2rem;
