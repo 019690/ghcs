@@ -212,14 +212,10 @@
           </ul>
         </div>
         <div class="f-column">
-          <h2>NEWSLETTER</h2>
-          <h3>Subscribe to our Newsletter</h3>
-          <form name="submit-to-google-sheet">
-            <input type="text" name="text" id="" placeholder="NAME">
-            <input type="email" name="email" id="" placeholder="EMAIL" required>
-            <input type="submit" value="SUBMIT" class="input-submit">
-          </form>
-          <span id="msg"></span>
+          <iframe width="400" height="260"
+            src="https://684c796c.sibforms.com/serve/MUIEAJTx9qJGald_Pc3acuDCkWDztTCVlhQGowlFB_7fIecR56N8XhkOzh5CfCYJ6xCYJIPxJzvr7DUgzGPliqrdR1TDnhLZeMc0rqXW1SM9PgydKHC9OS159pHPw2nLFr2ojKCNT1YEYzKos20E5zmSU2nj_AC4dyz7K7_6JvCDDBNvEfVW6hNx4oWryvtNiEkIF8s03J9c2DZD"
+            frameborder="0" scrolling="auto" allowfullscreen
+            style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
         </div>
         <div class="f-column">
           <h2>CONTACT</h2>
@@ -257,22 +253,6 @@
 
 </body>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwgowa8VvdLhZDZiB0ZdUa9xnoziDmD2ZMi55s_PBIOi7Xn0uKp2OGyQZR7H6YxGszwwg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => {
-        msg.innerHTML = "Thank You For Subscribing"
-        setTimeout(function () {
-          msg.innerHTML = ""
-        }, 3000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
 
 
   const toggleBtn = document.querySelector('.toggle-btn')
