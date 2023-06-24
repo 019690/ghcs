@@ -48,9 +48,17 @@
         </li>
       </ul>
     </div>
-    <div class="toggle-btn">
+    <!-- <div class="toggle-btn">
       <i class="fa-solid fa-bars"></i>
-    </div>
+      <i class="fa-solid fa-xmark"></i>
+    </div> -->
+
+    <button id="openbtn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <button id="closebtn">
+      <i class="fa-solid fa-times"></i>
+    </button>
 
     <div class="dropdown-menu">
 
@@ -70,6 +78,7 @@
 
     </div>
   </header>
+
   <div class="EB-1">
     <div class="EB-cont">
       <h1> PRODUCTS THAT ENHANCE YOUR LEARNING PROCESS</h1>
@@ -186,18 +195,33 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+<script>
 
-  const toggleBtn = document.querySelector('.toggle-btn')
-  const toggleBtnIcon = document.querySelector('.toggle-btn i')
+  const togglebtn = document.getElementById('openbtn')
+  const togglebtn1 = document.getElementById('closebtn')
   const dropDownMenu = document.querySelector('.dropdown-menu')
 
-  toggleBtn.onclick = function () {
-    dropDownMenu.classList.toggle('open')
-    const isOpen = dropDownMenu.classList.contains('open')
+  togglebtn.onclick = function () {
 
+    dropDownMenu.classList.toggle('open')
+
+    const isOpen = dropDownMenu.classList.contains('open')
     toggleBtn.classList = isOpen
-    'fa-solid fa-bars'
+
+    'fas fa-bars'
+
   }
+
+  togglebtn1.onclick = function () {
+
+    dropDownMenu.classList.toggle('close')
+
+    const isClose = dropDownMenu.classList.contains('close')
+    toggleBtn1.classList = isClose
+    'fa-solid fa-x'
+  }
+
 </script>
 </body>
 

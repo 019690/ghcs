@@ -47,9 +47,12 @@
         </li>
       </ul>
     </div>
-    <div class="toggle-btn">
+    <button id="openbtn">
       <i class="fa-solid fa-bars"></i>
-    </div>
+    </button>
+    <button id="closebtn">
+      <i class="fa-solid fa-times"></i>
+    </button>
 
     <div class="dropdown-menu">
 
@@ -103,30 +106,30 @@
 
 <script>
 
-  // const scriptURL = 'https://script.google.com/macros/s/AKfycbwJaw1uqANMPGZNm2XU1Zr6uWxgJnE_0w5FoRwhPyyntDxmIAHIc5_EfSdbzfjzdeW_/exec'
-  // const form = document.forms['submit-to-google-sheet']
-
-  // form.addEventListener('submit', e => {
-  //   e.preventDefault()
-  //   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-  //     .then(response => console.log('Success!', response))
-  //   form.reset()
-
-  //     .catch(error => console.error('Error!', error.message))
-  // })
-
-
-  const toggleBtn = document.querySelector('.toggle-btn')
-  const toggleBtnIcon = document.querySelector('.toggle-btn i')
+  const togglebtn = document.getElementById('openbtn')
+  const togglebtn1 = document.getElementById('closebtn')
   const dropDownMenu = document.querySelector('.dropdown-menu')
 
-  toggleBtn.onclick = function () {
-    dropDownMenu.classList.toggle('open')
-    const isOpen = dropDownMenu.classList.contains('open')
+  togglebtn.onclick = function () {
 
+    dropDownMenu.classList.toggle('open')
+
+    const isOpen = dropDownMenu.classList.contains('open')
     toggleBtn.classList = isOpen
-    'fa-solid fa-bars'
+
+    'fas fa-bars'
+
   }
+
+  togglebtn1.onclick = function () {
+
+    dropDownMenu.classList.toggle('close')
+
+    const isClose = dropDownMenu.classList.contains('close')
+    toggleBtn1.classList = isClose
+    'fa-solid fa-x'
+  }
+
 </script>
 
 </html>

@@ -197,13 +197,45 @@ header .toggle-btn{
   color: var(--link-color);
 }
 
+header button {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  /* top: 50%; */
+  right: 0;
+  padding-right: 5px;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+}
 
+header button#closebtn {
+  display: none;
+}
 
- @media (max-width: 769px) {
-  header{
-    max-width: 100%;
+@media (max-width: 769px) {
+  header button {
+    display: block;
   }
 
+  .menu-1 {
+    display: none;
+    position: absolute;
+    top: 87px;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .menu-1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  
   header ul{
     position: absolute;
     width: 50%;

@@ -16,4 +16,3 @@
     cardDetails.style.display = "none";
     mpesaDetails.style.display = "block";
   });
-  
